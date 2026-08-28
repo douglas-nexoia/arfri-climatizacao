@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Services from "@/components/Services";
 import Advantages from "@/components/Advantages";
+import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -164,6 +165,7 @@ const LimpezaHigienizacao = () => {
           <Brands />
           <Services focusedService="limpeza" />
           <Advantages />
+          <SocialProof />
           <FAQ customFaqs={limpezaFaqs} />
           <Contact defaultService="limpeza" whatsappMessage={WHATSAPP_LIMPEZA} />
         </main>

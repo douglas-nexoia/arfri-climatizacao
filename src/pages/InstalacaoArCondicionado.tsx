@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Services from "@/components/Services";
 import Advantages from "@/components/Advantages";
+import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -164,6 +165,7 @@ const InstalacaoArCondicionado = () => {
           <Brands />
           <Services focusedService="instalacao" />
           <Advantages />
+          <SocialProof />
           <FAQ customFaqs={instalacaoFaqs} />
           <Contact defaultService="instalacao" whatsappMessage={WHATSAPP_INSTALACAO} />
         </main>

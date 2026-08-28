@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Services from "@/components/Services";
 import Advantages from "@/components/Advantages";
+import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -164,6 +165,7 @@ const ConsertoArCondicionado = () => {
           <Brands />
           <Services focusedService="conserto" />
           <Advantages />
+          <SocialProof />
           <FAQ customFaqs={consertoFaqs} />
           <Contact defaultService="conserto" whatsappMessage={WHATSAPP_CONSERTO} />
         </main>
