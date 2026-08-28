@@ -30,24 +30,24 @@ const Hero = ({
   return (
     <section
       id="inicio"
-      className="relative min-h-[92vh] flex items-center bg-[#071324] overflow-hidden pt-28 pb-16 md:py-32"
+      className="relative min-h-[92vh] flex items-center bg-[#071324] overflow-hidden pt-28 pb-16 md:py-24"
     >
       {/* 1. Background City Landscape Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transform scale-105 filter brightness-90 transition-transform duration-1000"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transform scale-105 filter brightness-[0.80] transition-transform duration-1000"
         style={{ backgroundImage: `url(${bgImageSrc})` }}
       />
 
       {/* 2. Deep Navy & Ice Blue Cinematic Overlay Gradients */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#071324] via-[#071324]/92 to-[#071324]/75 z-0" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#071324] via-transparent to-[#071324]/80 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#071324] via-[#071324]/92 to-[#071324]/80 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#071324] via-transparent to-[#071324]/85 z-0" />
       
       {/* Ambient Lighting / Glow Effects */}
-      <div className="absolute top-1/4 left-10 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl pointer-events-none z-0" />
+      <div className="absolute top-1/4 left-10 w-96 h-96 bg-sky-500/15 rounded-full blur-3xl pointer-events-none z-0" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none z-0" />
 
       <div className="container-max w-full relative z-10 px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           {/* Left Content Column */}
           <div className="lg:col-span-7 text-left">
             {/* Location & Trust Badge */}
@@ -76,13 +76,13 @@ const Hero = ({
               ))}
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons (Clean, solid WhatsApp green - NO frantic blinking) */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-base sm:text-lg px-8 py-4 rounded-2xl shadow-2xl shadow-green-500/30 transition-all duration-300 hover:scale-105 animate-pulse-glow text-center"
+                className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-base sm:text-lg px-8 py-4 rounded-2xl shadow-xl shadow-black/30 transition-all duration-200 hover:scale-105 text-center"
               >
                 <MessageCircle className="w-6 h-6 fill-white" />
                 <span>Solicitar no WhatsApp</span>
@@ -98,34 +98,33 @@ const Hero = ({
             </div>
           </div>
 
-          {/* Right Foreground Card (City + Technician Layered Effect) */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md">
-              {/* Outer Glow */}
-              <div className="absolute -inset-1 bg-gradient-to-tr from-sky-500/40 via-blue-600/30 to-sky-400/20 rounded-3xl blur-xl" />
-              
-              {/* Glassmorphic Card Container */}
-              <div className="relative rounded-3xl p-2.5 bg-slate-900/80 backdrop-blur-xl border border-white/20 shadow-2xl">
-                <div className="relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[1/1] lg:aspect-[4/5] bg-slate-950">
-                  <img
-                    src={imageSrc}
-                    alt="Técnico Especialista em Ar Condicionado AR FRI"
-                    className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
-                    loading="eager"
-                    fetchPriority="high"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#071324] via-transparent to-transparent opacity-85" />
-                  
-                  {/* Floating Trust Card on Top */}
-                  <div className="absolute bottom-4 inset-x-4 bg-slate-900/95 backdrop-blur-md border border-white/20 rounded-2xl p-4 flex items-center gap-3.5 shadow-2xl">
-                    <div className="w-11 h-11 rounded-xl bg-sky-500/20 border border-sky-400/30 flex items-center justify-center shrink-0">
-                      <ShieldCheck className="w-6 h-6 text-sky-400" />
-                    </div>
-                    <div>
-                      <h4 className="text-white text-xs font-bold uppercase tracking-wider">Atendimento Local Confiável</h4>
-                      <p className="text-slate-300 text-xs">Indaiatuba • Salto • Itu / SP</p>
-                    </div>
-                  </div>
+          {/* Right Column: Sem moldura (Recorte do Instalador integrado diretamente ao fundo) */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
+            {/* Ambient Cyan / Blue Glow behind the technician cutout */}
+            <div className="absolute inset-0 bg-gradient-to-t from-sky-500/30 via-blue-500/20 to-transparent rounded-full blur-3xl pointer-events-none transform scale-90" />
+
+            <div className="relative z-10 w-full max-w-sm lg:max-w-md flex flex-col items-center">
+              {/* Recorte / Imagem sem moldura com fade suave na base */}
+              <div className="relative w-full overflow-hidden">
+                <img
+                  src={imageSrc}
+                  alt="Técnico Instalador de Ar Condicionado AR FRI"
+                  className="w-full h-auto max-h-[460px] lg:max-h-[500px] object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] transform hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                {/* Soft gradient fade on bottom to merge seamlessly */}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#071324] via-[#071324]/50 to-transparent pointer-events-none" />
+              </div>
+
+              {/* Floating Trust Card overlapping */}
+              <div className="mt-[-16px] z-20 w-[92%] bg-[#071324]/95 border border-sky-400/30 rounded-2xl p-3.5 flex items-center gap-3.5 shadow-2xl backdrop-blur-md">
+                <div className="w-10 h-10 rounded-xl bg-sky-500/20 border border-sky-400/30 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-6 h-6 text-sky-400" />
+                </div>
+                <div>
+                  <h4 className="text-white text-xs font-bold uppercase tracking-wider">Atendimento Especializado</h4>
+                  <p className="text-slate-300 text-xs">Indaiatuba • Salto • Itu / SP</p>
                 </div>
               </div>
             </div>
