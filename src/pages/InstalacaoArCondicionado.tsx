@@ -9,6 +9,7 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import acUnitImg from "@/assets/ac-unit.jpg";
 import { ShieldCheck, Wind, CheckCircle2, Award, Zap, MessageCircle } from "lucide-react";
 
 const WHATSAPP_INSTALACAO = "Olá, gostaria de um orçamento para instalação de ar (Ref: #instalacao)";
@@ -96,6 +97,7 @@ const InstalacaoArCondicionado = () => {
             }
             description="Comprou ar condicionado ou está em reforma? Garanta a máxima eficiência e a garantia total do seu aparelho com nossa instalação técnica em 100% cobre e processo de vácuo rigoroso."
             whatsappMessage={WHATSAPP_INSTALACAO}
+            imageSrc={acUnitImg}
             bulletPoints={[
               "Tubulação 100% de cobre (zero alumínio)",
               "Processo de vácuo com vacuômetro digital",

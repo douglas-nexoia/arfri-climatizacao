@@ -9,6 +9,7 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import acUnitImg from "@/assets/ac-unit.jpg";
 import { Sparkles, ShieldCheck, Zap, HeartPulse, CheckCircle2, MessageCircle, Wind } from "lucide-react";
 
 const WHATSAPP_LIMPEZA = "Olá, gostaria de agendar a limpeza do meu ar (Ref: #limpeza)";
@@ -96,6 +97,7 @@ const LimpezaHigienizacao = () => {
             }
             description="Livre sua família e colaboradores de fungos, ácaros, bactérias e mau cheiro. Higienização técnica com bactericida biodegradável e bolsa coletora sem sujeira na sua parede."
             whatsappMessage={WHATSAPP_LIMPEZA}
+            imageSrc={acUnitImg}
             bulletPoints={[
               "Elimina 99,9% de ácaros, fungos e bactérias",
               "Bolsa coletora profissional (zero respingos)",
