@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70" fill="none">
+  <!-- Snowflake / Wind Climate Icon -->
+  <g transform="translate(5, 5)">
+    <rect width="60" height="60" rx="16" fill="url(#blue_grad)" />
+    <!-- Cold Frost / Climate Symbols -->
+    <path d="M30 14V46M14 30H46M19 19L41 41M41 19L19 41" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+    <circle cx="30" cy="30" r="5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M30 20L26 24M30 20L34 24M30 40L26 36M30 40L34 36M20 30L24 26M20 30L24 34M40 30L36 26M40 30L36 34" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography -->
+  <text x="78" y="38" font-family="'Poppins', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="1.5">AR<tspan fill="#38BDF8">FRI</tspan></text>
+  <text x="79" y="54" font-family="'Poppins', sans-serif" font-weight="600" font-size="10.5" fill="#94A3B8" letter-spacing="3.5">CLIMATIZAÇÃO</text>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="blue_grad" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0284C7" />
+      <stop offset="1" stop-color="#0369A1" />
+    </linearGradient>
+  </defs>
+</svg>

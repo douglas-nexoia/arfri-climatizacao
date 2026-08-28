@@ -1,0 +1,56 @@
+{
+  "rewrites": [
+    {
+      "source": "/conserto-ar-condicionado",
+      "destination": "/conserto-ar-condicionado.html"
+    },
+    {
+      "source": "/conserto-ar-condicionado/",
+      "destination": "/conserto-ar-condicionado.html"
+    },
+    {
+      "source": "/conserto",
+      "destination": "/conserto-ar-condicionado.html"
+    },
+    {
+      "source": "/manutencao-ar-condicionado",
+      "destination": "/conserto-ar-condicionado.html"
+    },
+    {
+      "source": "/manutencao",
+      "destination": "/conserto-ar-condicionado.html"
+    },
+    {
+      "source": "/instalacao-ar-condicionado",
+      "destination": "/instalacao-ar-condicionado.html"
+    },
+    {
+      "source": "/instalacao-ar-condicionado/",
+      "destination": "/instalacao-ar-condicionado.html"
+    },
+    {
+      "source": "/instalacao",
+      "destination": "/instalacao-ar-condicionado.html"
+    },
+    {
+      "source": "/limpeza-higienizacao-ar-condicionado",
+      "destination": "/limpeza-higienizacao-ar-condicionado.html"
+    },
+    {
+      "source": "/limpeza-higienizacao-ar-condicionado/",
+      "destination": "/limpeza-higienizacao-ar-condicionado.html"
+    },
+    {
+      "source": "/limpeza-ar-condicionado",
+      "destination": "/limpeza-higienizacao-ar-condicionado.html"
+    },
+    {
+      "source": "/limpeza",
+      "destination": "/limpeza-higienizacao-ar-condicionado.html"
+    },
+    {
+      "source": "/higienizacao",
+      "destination": "/limpeza-higienizacao-ar-condicionado.html"
+    }
+  ]
+}
