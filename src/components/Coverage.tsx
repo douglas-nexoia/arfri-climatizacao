@@ -31,7 +31,7 @@ const Coverage = () => {
               Atendemos o seu bairro
             </h2>
             <p className="font-sans text-base sm:text-[16.5px] text-white/60 leading-relaxed mb-8 max-w-[480px]">
-              Indaiatuba, Salto e Itu. Técnicos em rota constante pela região para garantir agilidade e pronto atendimento no mesmo dia.
+              Indaiatuba, Salto e Itu. Técnicos em rota constante pela região para garantir agilidade e atendimento de qualidade.
             </p>
 
             {/* Chips */}
@@ -60,27 +60,39 @@ const Coverage = () => {
             </a>
           </div>
 
-          {/* Right Column: Embedded Map representation */}
+          {/* Right Column: Real Embedded Google Map of Indaiatuba & Region */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-[420px] aspect-square rounded-md overflow-hidden bg-[#12212F] border border-white/10 relative p-6 flex flex-col justify-between">
-              {/* Map Graphic overlay */}
-              <div className="absolute inset-0 opacity-30 bg-[radial-gradient(#1D74E8_1px,transparent_1px)] [background-size:16px_16px]" />
-              
-              <div className="relative z-10 flex items-center gap-2 text-white/80 font-heading font-semibold text-sm">
-                <MapPin className="w-4 h-4 text-[#1D74E8]" />
-                <span>Base em Indaiatuba / SP</span>
-              </div>
+            <div className="w-full max-w-[440px] aspect-square rounded-md overflow-hidden bg-[#12212F] border border-white/15 relative shadow-xl">
+              {/* Real Google Maps Embed with Dark Night Theme filter */}
+              <iframe
+                title="Mapa de Atendimento AR FRI - Indaiatuba, Salto e Itu"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117498.41162397759!2d-47.30138980839845!3d-23.109015099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b417e296317b%3A0xa1dfb5c92c813be8!2sIndaiatuba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{
+                  border: 0,
+                  filter: "invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%)",
+                }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              />
 
-              <div className="relative z-10 bg-[#0A141E]/90 backdrop-blur-md border border-white/15 rounded p-4">
-                <div className="font-mono text-[11px] text-[#1D74E8] uppercase tracking-wider mb-1">
-                  Raio de Atendimento
+              {/* Floating Base Card on Top */}
+              <div className="absolute top-4 left-4 right-4 bg-[#0A141E]/92 backdrop-blur-md border border-white/15 rounded p-3 flex items-center justify-between pointer-events-none shadow-lg">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-[#22C55E] shadow-[0_0_0_3px_rgba(34,197,94,0.25)]" />
+                  <div>
+                    <div className="font-heading font-semibold text-xs text-white">
+                      Base em Indaiatuba / SP
+                    </div>
+                    <div className="font-sans text-[11px] text-white/60">
+                      Rotas diárias em Indaiatuba, Salto e Itu
+                    </div>
+                  </div>
                 </div>
-                <div className="font-sans text-sm text-white font-medium">
-                  Indaiatuba • Salto • Itu e Região
-                </div>
-                <div className="font-sans text-xs text-white/50 mt-1">
-                  Chamados abertos até 15h atendidos no mesmo dia.
-                </div>
+                <MapPin className="w-4 h-4 text-[#1D74E8] shrink-0" />
               </div>
             </div>
           </div>
