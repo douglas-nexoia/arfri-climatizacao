@@ -1,3 +1,5 @@
+import { trackWhatsAppConversion, trackPhoneConversion } from "@/lib/tracking";
+
 interface HeroProps {
   badgeRegion?: string;
   badgeCredential?: string;
@@ -28,7 +30,7 @@ const Hero = ({
       {/* 2. Soft Ambient Lighting */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#1D74E8]/[0.08] rounded-full blur-3xl pointer-events-none z-0" />
 
-      {/* 3. Subtle Google 4.6★ Watermark on the Right (Receita Hero Tipográfico do Manual) */}
+      {/* 3. Subtle Google 4.6★ Watermark on the Right */}
       <div className="absolute right-6 lg:right-16 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center justify-center select-none pointer-events-none opacity-[0.06] z-0">
         <div className="font-heading font-extrabold text-[160px] lg:text-[220px] leading-none text-white tracking-tighter">
           4,6
@@ -53,7 +55,7 @@ const Hero = ({
             </span>
           </div>
 
-          {/* H1 in 2-3 lines with last line in accent color */}
+          {/* H1 in 2-3 lines */}
           <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[56px] leading-[1.04] tracking-[-0.035em] text-white mb-6 text-balance">
             {title}
           </h1>
@@ -63,10 +65,11 @@ const Hero = ({
             {description}
           </p>
 
-          {/* 2 CTAs */}
+          {/* 2 CTAs with conversion tracking */}
           <div className="flex flex-wrap gap-3.5 mb-10">
             <a
               href={whatsappUrl}
+              onClick={trackWhatsAppConversion}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 bg-[#22C55E] hover:bg-[#1eb354] text-[#062B14] font-sans font-bold text-base px-7 py-4 rounded-md shadow-md transition-transform duration-150 active:scale-95"
@@ -76,6 +79,7 @@ const Hero = ({
             </a>
             <a
               href="tel:+5519997871301"
+              onClick={trackPhoneConversion}
               className="inline-flex items-center gap-2 border border-white/25 hover:bg-white/5 text-white font-sans font-semibold text-base px-6 py-4 rounded-md transition-colors"
             >
               <span>Ligar agora</span>

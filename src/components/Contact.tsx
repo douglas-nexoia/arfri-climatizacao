@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { trackWhatsAppConversion } from "@/lib/tracking";
 
 interface ContactProps {
   whatsappMessage?: string;
@@ -12,6 +13,7 @@ const Contact = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackWhatsAppConversion();
     const msg = `Olá! Meu nome é ${name || "Cliente"} (${phone || "Não informado"}) e gostaria de um atendimento para meu ar condicionado.`;
     window.open(`https://wa.me/5519997871301?text=${encodeURIComponent(msg)}`, "_blank");
   };
@@ -38,6 +40,7 @@ const Contact = ({
             {/* Big Green WhatsApp Button */}
             <a
               href={directWhatsAppUrl}
+              onClick={trackWhatsAppConversion}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#22C55E] hover:bg-[#1eb354] text-[#062B14] font-sans font-bold text-base sm:text-lg px-8 py-4 rounded-md shadow-lg transition-transform active:scale-95"

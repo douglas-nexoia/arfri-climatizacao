@@ -11,6 +11,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { ShieldCheck, Wind, Gauge, Award, ArrowRight } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/tracking";
 
 const installStandards = [
   {
@@ -164,6 +165,7 @@ const InstalacaoArCondicionado = () => {
 
                       <a
                         href={waRefUrl}
+                        onClick={trackWhatsAppConversion}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 font-sans font-semibold text-sm text-[#1D74E8] hover:text-[#1560c2] pt-4 border-t border-[#E4E2DD]"

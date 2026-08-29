@@ -1,75 +1,93 @@
+import { trackPhoneConversion } from "@/lib/tracking";
+
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-[#0A141E] border-t border-white/10 pt-14 pb-8 text-white">
+    <footer className="bg-[#0A141E] text-white/60 py-16 border-t border-white/10 font-sans text-sm">
       <div className="container-max">
-        {/* 4 Columns Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
-          {/* Column 1: Company Description */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          {/* Col 1: Brand & Bio */}
           <div>
-            <a href="/" className="inline-flex items-baseline gap-0.5 font-heading font-extrabold text-2xl tracking-tight text-white mb-4">
-              <span>AR FRI</span>
-              <span className="text-[#1D74E8]">.</span>
-            </a>
-            <p className="font-sans text-sm text-white/50 leading-relaxed max-w-[280px]">
-              Assistência técnica, instalação especializada e higienização de ar condicionado em Indaiatuba, Salto e Itu.
+            <span className="font-heading font-bold text-xl text-white block mb-3">
+              AR FRI<span className="text-[#1D74E8]">.</span>
+            </span>
+            <p className="text-white/60 leading-relaxed text-sm max-w-[260px] mb-4">
+              Assistência técnica e climatização residencial e comercial. Conserto, instalação e higienização de ar condicionado em Indaiatuba, Salto e Itu.
             </p>
+            <div className="font-mono text-xs text-[#1D74E8]">
+              90 dias de garantia por escrito
+            </div>
           </div>
 
-          {/* Column 2: Services */}
+          {/* Col 2: Serviços */}
           <div>
-            <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-white/40 mb-4">
+            <div className="font-heading font-semibold text-white text-base mb-4">
               Serviços
             </div>
-            <div className="grid gap-2.5 font-sans text-sm">
-              <a href="/conserto-ar-condicionado" className="text-white/70 hover:text-white transition-colors">
-                Conserto de ar condicionado
-              </a>
-              <a href="/instalacao-ar-condicionado" className="text-white/70 hover:text-white transition-colors">
-                Instalação Split & Inverter
-              </a>
-              <a href="/limpeza-higienizacao-ar-condicionado" className="text-white/70 hover:text-white transition-colors">
-                Higienização e limpeza
-              </a>
-            </div>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="/conserto-ar-condicionado" className="hover:text-white transition-colors">
+                  Conserto & Manutenção
+                </a>
+              </li>
+              <li>
+                <a href="/instalacao-ar-condicionado" className="hover:text-white transition-colors">
+                  Instalação Split & Inverter
+                </a>
+              </li>
+              <li>
+                <a href="/limpeza-higienizacao-ar-condicionado" className="hover:text-white transition-colors">
+                  Higienização & Limpeza
+                </a>
+              </li>
+            </ul>
           </div>
 
-          {/* Column 3: Company */}
+          {/* Col 3: Região Atendida */}
           <div>
-            <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-white/40 mb-4">
-              Empresa
+            <div className="font-heading font-semibold text-white text-base mb-4">
+              Região de Atendimento
             </div>
-            <div className="grid gap-2.5 font-sans text-sm">
-              <a href="/#como" className="text-white/70 hover:text-white transition-colors">
-                Como funciona
-              </a>
-              <a href="/#onde" className="text-white/70 hover:text-white transition-colors">
-                Onde atendemos
-              </a>
-              <a href="/#garantia" className="text-white/70 hover:text-white transition-colors">
-                Garantia e transparência
-              </a>
-            </div>
+            <ul className="space-y-1.5 text-xs text-white/50">
+              <li>Indaiatuba (Centro e todos os bairros)</li>
+              <li>Salto (Centro, Nações, etc.)</li>
+              <li>Itu (Centro, Novo Itu, etc.)</li>
+              <li>Condomínios residenciais e comerciais</li>
+            </ul>
           </div>
 
-          {/* Column 4: Direct Contacts */}
+          {/* Col 4: Contato Direto */}
           <div>
-            <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-white/40 mb-4">
-              Contato
+            <div className="font-heading font-semibold text-white text-base mb-4">
+              Atendimento Direto
             </div>
-            <div className="grid gap-2.5 font-sans text-sm text-white/70">
-              <span className="font-mono text-white">(19) 99787-1301</span>
-              <span>Seg a sáb, 8h às 18h</span>
-              <span>Indaiatuba • Salto • Itu / SP</span>
+            <div className="space-y-2">
+              <a
+                href="tel:+5519997871301"
+                onClick={trackPhoneConversion}
+                className="font-mono text-sm text-white hover:text-[#1D74E8] block transition-colors"
+              >
+                (19) 99787-1301
+              </a>
+              <div className="text-xs text-white/50">
+                Segunda a Sábado — 8h às 18h
+              </div>
+              <div className="text-xs text-white/50">
+                Renatotortorelli95@gmail.com
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Copyright Line */}
-        <div className="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4 font-sans text-xs text-white/40">
-          <span>© {new Date().getFullYear()} AR FRI Climatização. Todos os direitos reservados.</span>
-          <span className="font-mono text-[11px] tracking-wider text-white/30 uppercase">
-            PADRÃO DE ALTA CONVERSÃO
-          </span>
+        {/* Copyright */}
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
+          <div>
+            © {currentYear} AR FRI Climatização. Todos os direitos reservados.
+          </div>
+          <div>
+            Indaiatuba • Salto • Itu / SP
+          </div>
         </div>
       </div>
     </footer>

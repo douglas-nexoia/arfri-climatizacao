@@ -1,4 +1,5 @@
 import { ArrowRight, Wrench, ShieldCheck, Sparkles } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/tracking";
 
 const services = [
   {
@@ -66,7 +67,7 @@ const Services = () => {
                 key={s.id}
                 className="bg-white border border-[#E4E2DD] rounded-md overflow-hidden flex flex-col justify-between hover:border-[#14212E] transition-colors"
               >
-                {/* Technical Graphic Header (Template Canônico - sem renders falsos) */}
+                {/* Technical Graphic Header */}
                 <div 
                   className="h-40 bg-[#EDEBE6] p-6 flex flex-col justify-between border-b border-[#E4E2DD]"
                   style={{
@@ -111,6 +112,7 @@ const Services = () => {
                   <div className="pt-4 border-t border-[#E4E2DD] flex items-center justify-between">
                     <a
                       href={waUrl}
+                      onClick={trackWhatsAppConversion}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-sans font-semibold text-sm sm:text-[15px] text-[#1D74E8] hover:text-[#1560c2] inline-flex items-center gap-1.5 transition-colors"

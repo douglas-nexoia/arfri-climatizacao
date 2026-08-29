@@ -1,4 +1,5 @@
 import { MapPin } from "lucide-react";
+import { trackWhatsAppConversion } from "@/lib/tracking";
 
 const bairros = [
   "Centro (Indaiatuba)",
@@ -52,6 +53,7 @@ const Coverage = () => {
             {/* Link */}
             <a
               href={whatsappUrl}
+              onClick={trackWhatsAppConversion}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-sans font-semibold text-base text-white border-b-2 border-[#1D74E8] pb-1 hover:text-[#1D74E8] transition-colors"
