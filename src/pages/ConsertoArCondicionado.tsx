@@ -10,7 +10,6 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import tecnicoImg from "@/assets/tecnico-recorte.png";
 
 const ConsertoArCondicionado = () => {
   const WHATSAPP_CONSERTO = "Olá, preciso de conserto no meu ar condicionado (Ref: #conserto)";
@@ -39,7 +38,7 @@ const ConsertoArCondicionado = () => {
         <title>Conserto e Manutenção de Ar Condicionado em Indaiatuba, Salto e Itu | AR FRI</title>
         <meta
           name="description"
-          content="Conserto de ar condicionado que não gela, pinga água ou desarma compressor em Indaiatuba, Salto e Itu. Diagnóstico rápido, peças originais e 90 dias de garantia."
+          content="Conserto de ar condicionado que não gela, pinga água ou desarma compressor em Indaiatuba, Salto e Itu. Atendimento ágil, peças originais e 90 dias de garantia por escrito."
         />
         <meta
           name="keywords"
@@ -57,16 +56,15 @@ const ConsertoArCondicionado = () => {
         <main>
           {/* Hero Section for Repair */}
           <Hero
-            badgeRegion="Indaiatuba, Salto e Itu / SP"
-            badgeCredential="Atendimento de Emergência Hoje"
-            imageSrc={tecnicoImg}
+            badgeRegion="Indaiatuba, Salto e Itu"
+            badgeCredential="Técnicos em Rota na Região"
             title={
               <>
                 Conserto de Ar Condicionado em<br />
                 <span className="text-[#1D74E8]">Indaiatuba, Salto e Itu</span>
               </>
             }
-            description="Não gela, está pingando água ou exibindo código de erro? Realizamos o diagnóstico no local e conserto no mesmo dia com peças originais e 90 dias de garantia por escrito."
+            description="Não gela, está pingando água ou exibindo código de erro no painel? Realizamos o diagnóstico no local com peças originais e 90 dias de garantia por escrito."
             whatsappMessage={WHATSAPP_CONSERTO}
           />
 

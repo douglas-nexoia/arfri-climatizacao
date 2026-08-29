@@ -12,11 +12,11 @@ const faqs: FAQItem[] = [
   },
   {
     q: "Como funciona o orçamento e a visita?",
-    a: "O técnico avalia o ar condicionado na sua casa ou empresa, identifica a causa da falha (pressão, placa ou mecânica) e explica o procedimento. Nada é feito sem sua autorização prévia.",
+    a: "O técnico avalia o ar condicionado na sua residência ou empresa, identifica a causa da falha (pressão de gás, elétrica ou mecânica) e explica o procedimento necessário. Nada é feito sem sua autorização.",
   },
   {
-    q: "Vocês atendem no mesmo dia em Indaiatuba?",
-    a: "Na maioria dos casos, sim. Chamados abertos até as 15h costumam ser atendidos ainda no mesmo dia em Indaiatuba, Salto e Itu.",
+    q: "Qual a agilidade e disponibilidade de atendimento na minha região?",
+    a: "Contamos com técnicos em rota constante em Indaiatuba, Salto e Itu. Ao nos chamar no WhatsApp, verificamos a rota do dia para providenciar o atendimento mais ágil possível com você.",
   },
   {
     q: "Quais marcas de ar condicionado vocês atendem?",

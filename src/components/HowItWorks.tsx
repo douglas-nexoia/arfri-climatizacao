@@ -6,8 +6,8 @@ const steps = [
   },
   {
     n: "02",
-    title: "Agendamos a visita",
-    desc: "Escolhemos o melhor horário com você. Chamados até as 15h, normalmente no mesmo dia.",
+    title: "Agendamento ágil",
+    desc: "Combinamos o melhor período e encaixe na rota do dia direto pelo WhatsApp.",
   },
   {
     n: "03",
@@ -38,7 +38,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* 4 Steps Grid with border separators */}
+        {/* 4 Steps Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-white/15">
           {steps.map((step, i) => (
             <div

@@ -38,7 +38,7 @@ const Index = () => {
         <title>AR FRI Climatização | Conserto, Instalação e Limpeza de Ar Condicionado em Indaiatuba, Salto e Itu</title>
         <meta
           name="description"
-          content="Assistência técnica especializada em ar condicionado em Indaiatuba, Salto e Itu. Conserto no mesmo dia, instalação em 100% cobre e higienização profunda com 90 dias de garantia."
+          content="Assistência técnica especializada em ar condicionado em Indaiatuba, Salto e Itu. Atendimento ágil com técnicos em rota, instalação em 100% cobre e 90 dias de garantia por escrito."
         />
         <meta
           name="keywords"
@@ -56,15 +56,15 @@ const Index = () => {
         <main>
           {/* Hero Section */}
           <Hero
-            badgeRegion="Indaiatuba, Salto e Itu / SP"
-            badgeCredential="Chamados até 15h atendidos hoje"
+            badgeRegion="Indaiatuba, Salto e Itu"
+            badgeCredential="Técnicos em Rota na Região"
             title={
               <>
                 Seu ar condicionado parou hoje.<br />
-                <span className="text-[#1D74E8]">Hoje ele volta.</span>
+                <span className="text-[#1D74E8]">A gente resolve para você.</span>
               </>
             }
-            description="Conserto, instalação e higienização de ar condicionado em domicílio e empresas. Diagnóstico no local, peças originais e 90 dias de garantia por escrito."
+            description="Conserto, instalação e higienização de ar condicionado residencial e comercial. Diagnóstico preciso no local, peças originais e 90 dias de garantia por escrito."
             whatsappMessage={WHATSAPP_HOME}
           />
 

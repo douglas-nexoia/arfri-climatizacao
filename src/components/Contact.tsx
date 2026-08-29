@@ -32,7 +32,7 @@ const Contact = ({
               Descreve o problema.<br />A gente responde em minutos.
             </h2>
             <p className="font-sans text-base text-white/60 leading-relaxed mb-8 max-w-[460px]">
-              Segunda a sábado, 8h às 18h. Chamados até as 15h costumam ser atendidos ainda no mesmo dia em Indaiatuba, Salto e Itu.
+              Segunda a sábado, 8h às 18h. Atendimento ágil com técnicos em rota diária em Indaiatuba, Salto e Itu.
             </p>
 
             {/* Big Green WhatsApp Button */}

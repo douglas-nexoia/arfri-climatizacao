@@ -10,7 +10,6 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import acUnitImg from "@/assets/ac-unit.jpg";
 
 const InstalacaoArCondicionado = () => {
   const WHATSAPP_INSTALACAO = "Olá, gostaria de um orçamento para instalação de ar (Ref: #instalacao)";
@@ -39,7 +38,7 @@ const InstalacaoArCondicionado = () => {
         <title>Instalação de Ar Condicionado Split e Inverter em Indaiatuba, Salto e Itu | AR FRI</title>
         <meta
           name="description"
-          content="Instalação profissional de ar condicionado Split e Inverter em Indaiatuba, Salto e Itu. Tubulação 100% cobre, teste de vácuo e garantia de fábrica preservada."
+          content="Instalação profissional de ar condicionado Split e Inverter em Indaiatuba, Salto e Itu. Tubulação 100% cobre, teste de vácuo e garantia do fabricante preservada."
         />
         <meta
           name="keywords"
@@ -57,9 +56,8 @@ const InstalacaoArCondicionado = () => {
         <main>
           {/* Hero Section for Installation */}
           <Hero
-            badgeRegion="Indaiatuba, Salto e Itu / SP"
+            badgeRegion="Indaiatuba, Salto e Itu"
             badgeCredential="Padrão dos Fabricantes"
-            imageSrc={acUnitImg}
             title={
               <>
                 Instalação Especializada de<br />

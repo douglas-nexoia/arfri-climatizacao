@@ -1,13 +1,13 @@
-import technicianImg from "@/assets/technician-hero.jpg";
+import acUnitImg from "@/assets/ac-unit.jpg";
 
 const guarantees = [
   {
     value: "90 dias",
-    text: "Garantia por escrito na ordem de serviço, cobrindo peça trocada e mão de obra.",
+    text: "Garantia por escrito na ordem de serviço, cobrindo peça trocada e mão de obra técnica.",
   },
   {
     value: "Originais",
-    text: "Peças de fábrica e fluidos certificados. Você é informado de tudo antes da troca.",
+    text: "Peças de fábrica e fluidos certificados. Você é informado de tudo antes de qualquer troca.",
   },
   {
     value: "Sem troca cega",
@@ -15,7 +15,7 @@ const guarantees = [
   },
   {
     value: "Identificado",
-    text: "Profissional uniformizado, com ordem de serviço em nome da AR FRI e ferramental adequado.",
+    text: "Profissional qualificado, com ordem de serviço em nome da AR FRI e ferramental adequado.",
   },
 ];
 
@@ -54,19 +54,19 @@ const Guarantee = () => {
             </div>
           </div>
 
-          {/* Right Column: Photo 4:5 */}
+          {/* Right Column: High quality AC Unit Photo (No fake stock people) */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="aspect-[4/5] w-full max-w-[420px] rounded-md overflow-hidden relative bg-[#EDEBE6] shadow-sm border border-[#E4E2DD]">
               <img
-                src={technicianImg}
-                alt="Técnico especialista AR FRI em atendimento"
+                src={acUnitImg}
+                alt="Ar condicionado moderno com instalação técnica AR FRI"
                 className="w-full h-full object-cover filter brightness-95"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                <span className="font-mono text-xs text-white/90 leading-relaxed drop-shadow">
-                  Técnico qualificado AR FRI<br />
-                  <span className="text-white/60">Atendimento em domicílio e empresas</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent flex items-end p-6">
+                <span className="font-mono text-xs text-white/95 leading-relaxed drop-shadow">
+                  Padrão técnico rigoroso<br />
+                  <span className="text-white/70">Tubulação 100% cobre e teste de vácuo</span>
                 </span>
               </div>
             </div>

@@ -10,7 +10,6 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-import acUnitImg from "@/assets/ac-unit.jpg";
 
 const LimpezaHigienizacao = () => {
   const WHATSAPP_LIMPEZA = "Olá, gostaria de agendar a limpeza do meu ar (Ref: #limpeza)";
@@ -57,9 +56,8 @@ const LimpezaHigienizacao = () => {
         <main>
           {/* Hero Section for Cleaning */}
           <Hero
-            badgeRegion="Indaiatuba, Salto e Itu / SP"
+            badgeRegion="Indaiatuba, Salto e Itu"
             badgeCredential="Saúde & Eficiência Energética"
-            imageSrc={acUnitImg}
             title={
               <>
                 Higienização e Limpeza de<br />
