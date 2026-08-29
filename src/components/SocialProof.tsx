@@ -39,14 +39,14 @@ const SocialProof = () => {
 
           <div className="flex items-center gap-4 bg-white border border-[#E4E2DD] rounded-md px-5 py-3.5 shadow-sm">
             <div className="font-heading font-extrabold text-3xl sm:text-4xl text-[#14212E] tracking-tight">
-              5,0
+              4,6
             </div>
             <div>
               <div className="text-[#1D74E8] text-sm tracking-widest">
                 ★★★★★
               </div>
               <div className="font-sans text-xs text-[#68737E] mt-1">
-                142 avaliações · Google
+                Avaliações · Google
               </div>
             </div>
           </div>

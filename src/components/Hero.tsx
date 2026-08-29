@@ -80,9 +80,9 @@ const Hero = ({
           <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-[600px]">
             <div>
               <div className="font-heading font-bold text-xl sm:text-2xl text-white tracking-tight">
-                5,0<span className="text-[#1D74E8]">★</span>
+                4,6<span className="text-[#1D74E8]">★</span>
               </div>
-              <div className="font-sans text-xs text-white/55 mt-1">142 avaliações no Google</div>
+              <div className="font-sans text-xs text-white/55 mt-1">avaliações no Google</div>
             </div>
             <div>
               <div className="font-heading font-bold text-xl sm:text-2xl text-white tracking-tight">
