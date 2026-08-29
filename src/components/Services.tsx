@@ -1,39 +1,37 @@
-import { ArrowRight } from "lucide-react";
-import acUnitImg from "@/assets/ac-unit.jpg";
-import technicianHeroImg from "@/assets/technician-hero.jpg";
+import { ArrowRight, Wrench, ShieldCheck, Sparkles } from "lucide-react";
 
 const services = [
   {
     id: "conserto",
-    kicker: "Emergência & Manutenção",
+    kicker: "01 — Emergência & Manutenção",
     title: "Conserto de Ar Condicionado",
     route: "/conserto-ar-condicionado",
     whatsappRef: "Olá, preciso de conserto no meu ar condicionado (Ref: #conserto)",
-    image: technicianHeroImg,
-    slotText: "manutenção corretiva na condensadora/evaporadora",
-    desc: "Não gela, pinga água na parede, compressor desarma ou exibe código de erro no display. Diagnóstico preciso e conserto no mesmo dia.",
+    icon: Wrench,
+    slotText: "manutenção corretiva · diagnóstico no local",
+    desc: "Não gela, pinga água na parede, compressor desarma ou exibe código de erro no display. Diagnóstico preciso e conserto no mesmo dia com peças originais.",
     tags: ["Não gela", "Carga de gás", "Placa Inverter", "Compressor"],
   },
   {
     id: "instalacao",
-    kicker: "Padrão de Fábrica",
+    kicker: "02 — Padrão de Fábrica",
     title: "Instalação Split & Inverter",
     route: "/instalacao-ar-condicionado",
     whatsappRef: "Olá, gostaria de um orçamento para instalação de ar (Ref: #instalacao)",
-    image: acUnitImg,
-    slotText: "instalação com tubulação 100% cobre e suporte",
-    desc: "Instalação residencial e comercial preservando a garantia do fabricante. Tubulação 100% em cobre e processo de vácuo rigoroso.",
+    icon: ShieldCheck,
+    slotText: "tubulação 100% cobre · vácuo digital",
+    desc: "Instalação residencial e comercial preservando a garantia do fabricante. Tubulação 100% em cobre, fixação nivelada e teste de estanqueidade.",
     tags: ["100% Cobre", "Vácuo digital", "Suporte reforçado", "Multi-Split"],
   },
   {
     id: "limpeza",
-    kicker: "Saúde & Eficiência",
+    kicker: "03 — Saúde & Eficiência",
     title: "Higienização & Limpeza",
     route: "/limpeza-higienizacao-ar-condicionado",
     whatsappRef: "Olá, gostaria de agendar a limpeza do meu ar (Ref: #limpeza)",
-    image: acUnitImg,
-    slotText: "higienização com bolsa coletora e bactericida",
-    desc: "Elimina 99,9% de fungos, ácaros, bactérias e mau cheiro. Limpeza profunda com bolsa coletora sem respingos na sua parede ou piso.",
+    icon: Sparkles,
+    slotText: "bolsa coletora · bactericida biodegradável",
+    desc: "Elimina 99,9% de fungos, ácaros, bactérias e mau cheiro. Limpeza técnica profunda com bolsa coletora sem respingos na sua parede ou piso.",
     tags: ["Bolsa coletora", "Anti-fungos", "Sem sujeira", "Economia de energia"],
   },
 ];
@@ -53,7 +51,7 @@ const Services = () => {
             </h2>
           </div>
           <p className="font-sans text-sm sm:text-[16.5px] text-[#68737E] max-w-[360px] leading-relaxed">
-            Três especialidades com atendimento técnico no mesmo dia em Indaiatuba, Salto e Itu.
+            Três especialidades com atendimento técnico ágil em Indaiatuba, Salto e Itu.
           </p>
         </div>
 
@@ -61,22 +59,24 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((s) => {
             const waUrl = `https://wa.me/5519997871301?text=${encodeURIComponent(s.whatsappRef)}`;
+            const Icon = s.icon;
 
             return (
               <div
                 key={s.id}
-                className="bg-white border border-[#E4E2DD] rounded-md overflow-hidden flex flex-col hover:border-[#14212E] transition-colors"
+                className="bg-white border border-[#E4E2DD] rounded-md overflow-hidden flex flex-col justify-between hover:border-[#14212E] transition-colors"
               >
-                {/* Photo or Graphic Slot */}
-                <div className="h-44 sm:h-48 overflow-hidden relative bg-[#EDEBE6]">
-                  <img
-                    src={s.image}
-                    alt={s.title}
-                    className="w-full h-full object-cover filter brightness-95"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-4 font-mono text-[10.5px] tracking-wide text-white/90 drop-shadow">
+                {/* Technical Graphic Header (Template Canônico - sem renders falsos) */}
+                <div 
+                  className="h-40 bg-[#EDEBE6] p-6 flex flex-col justify-between border-b border-[#E4E2DD]"
+                  style={{
+                    backgroundImage: 'repeating-linear-gradient(58deg, rgba(20,33,46,.045) 0 2px, transparent 2px 13px)'
+                  }}
+                >
+                  <div className="w-10 h-10 rounded-md bg-white border border-[#E4E2DD] flex items-center justify-center text-[#1D74E8]">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span className="font-mono text-[10.5px] tracking-wide text-[#68737E] uppercase">
                     {s.slotText}
                   </span>
                 </div>
@@ -84,7 +84,7 @@ const Services = () => {
                 {/* Card Content */}
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <div className="font-mono text-[11px] tracking-[0.16em] uppercase text-[#68737E] mb-2">
+                    <div className="font-mono text-[11px] tracking-[0.16em] uppercase text-[#9AA2AC] mb-2">
                       {s.kicker}
                     </div>
                     <h3 className="font-heading font-bold text-xl sm:text-2xl text-[#14212E] tracking-tight mb-3">

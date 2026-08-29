@@ -1,13 +1,9 @@
-import indaiatubaBg from "@/assets/indaiatuba-bg.jpg";
-import acUnitImg from "@/assets/ac-unit.jpg";
-
 interface HeroProps {
   badgeRegion?: string;
   badgeCredential?: string;
   title: React.ReactNode;
   description: string;
   whatsappMessage: string;
-  bgImageSrc?: string;
 }
 
 const Hero = ({
@@ -16,23 +12,33 @@ const Hero = ({
   title,
   description,
   whatsappMessage,
-  bgImageSrc = indaiatubaBg,
 }: HeroProps) => {
   const whatsappUrl = `https://wa.me/5519997871301?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <section className="relative min-h-[620px] lg:min-h-[660px] flex items-center bg-[#0A141E] overflow-hidden">
-      {/* 1. Single Full-bleed Background Image with subtle atmospheric brightness */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-45 filter brightness-90"
-        style={{ backgroundImage: `url(${bgImageSrc})` }}
+    <section className="relative min-h-[580px] lg:min-h-[620px] flex items-center bg-[#0A141E] overflow-hidden">
+      {/* 1. Subtle Technical Striped Texture Background */}
+      <div 
+        className="absolute inset-0 bg-[#0A141E] z-0" 
+        style={{
+          backgroundImage: 'repeating-linear-gradient(58deg, rgba(255,255,255,.035) 0 2px, transparent 2px 14px)'
+        }}
       />
 
-      {/* 2. Directional Gradient (100deg) - Solid dark on left over text, smooth fade to right */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A141E] via-[#0A141E]/95 sm:via-[#0A141E]/90 to-[#0A141E]/40 z-0" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0A141E] via-transparent to-[#0A141E]/80 z-0" />
+      {/* 2. Soft Ambient Lighting */}
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#1D74E8]/[0.08] rounded-full blur-3xl pointer-events-none z-0" />
 
-      {/* 3. Hero Content - Clean single-layer layout */}
+      {/* 3. Subtle Google 4.6★ Watermark on the Right (Receita Hero Tipográfico do Manual) */}
+      <div className="absolute right-6 lg:right-16 top-1/2 -translate-y-1/2 hidden md:flex flex-col items-center justify-center select-none pointer-events-none opacity-[0.06] z-0">
+        <div className="font-heading font-extrabold text-[160px] lg:text-[220px] leading-none text-white tracking-tighter">
+          4,6
+        </div>
+        <div className="font-mono text-xl text-white tracking-[0.3em] uppercase -mt-4">
+          ★★★★★ GOOGLE
+        </div>
+      </div>
+
+      {/* 4. Hero Content */}
       <div className="container-max w-full relative z-10 py-16 sm:py-20 lg:py-24">
         <div className="max-w-[720px]">
           {/* 2 Badges */}
@@ -76,7 +82,7 @@ const Hero = ({
             </a>
           </div>
 
-          {/* 3 Numerical Proofs (Safe, no binding commitments) */}
+          {/* 3 Numerical Proofs */}
           <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-[600px]">
             <div>
               <div className="font-heading font-bold text-xl sm:text-2xl text-white tracking-tight">
