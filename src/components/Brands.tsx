@@ -1,32 +1,25 @@
-const brands = [
-  "Daikin",
-  "Fujitsu",
-  "LG Inverter",
-  "Samsung WindFree",
-  "Midea",
-  "Gree",
-  "Carrier",
-  "Elgin",
-  "Springer",
-  "Electrolux",
-  "Consul",
-  "Hitachi",
-];
-
 const Brands = () => {
-  return (
-    <section className="py-10 bg-[#050D18] border-y border-white/10">
-      <div className="container-max px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-xs sm:text-sm font-semibold uppercase tracking-widest text-slate-400 mb-6">
-          Especialistas em Todas as Principais Marcas (Split, Inverter, Hi-Wall, Cassete e Piso Teto)
-        </p>
+  const brands = [
+    "Daikin",
+    "Fujitsu",
+    "LG",
+    "Samsung",
+    "Midea",
+    "Gree",
+    "Carrier",
+    "Elgin",
+    "Springer",
+  ];
 
-        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
-          {brands.map((brand) => (
-            <span
-              key={brand}
-              className="bg-white/5 border border-white/10 text-slate-200 text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl hover:bg-white/10 hover:border-sky-400/40 hover:text-sky-300 transition-all duration-200"
-            >
+  return (
+    <section className="bg-[#0A141E] border-t border-b border-white/10 py-6">
+      <div className="container-max flex flex-wrap items-center gap-6 sm:gap-10">
+        <div className="font-mono text-[11px] tracking-[0.18em] text-white/40 uppercase leading-snug shrink-0">
+          Marcas que<br />atendemos
+        </div>
+        <div className="flex flex-wrap items-center gap-6 sm:gap-10 font-heading font-semibold text-base sm:text-lg text-white/40 tracking-tight">
+          {brands.map((brand, i) => (
+            <span key={i} className="hover:text-white/70 transition-colors">
               {brand}
             </span>
           ))}

@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Services from "@/components/Services";
-import Advantages from "@/components/Advantages";
+import HowItWorks from "@/components/HowItWorks";
+import Guarantee from "@/components/Guarantee";
+import Coverage from "@/components/Coverage";
 import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -11,12 +13,14 @@ import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
+  const WHATSAPP_HOME = "Olá! Vim pelo site da AR FRI e gostaria de um atendimento.";
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "HVACBusiness",
     "name": "AR FRI Climatização e Ar Condicionado",
-    "description": "Assistência técnica especializada em conserto, instalação e higienização de ar condicionado em Indaiatuba, Salto e Itu / SP.",
-    "telephone": "+55-19-99787-1301",
+    "image": "https://arfri.com.br/favicon.svg",
+    "telephone": "+5519997871301",
     "email": "Renatotortorelli95@gmail.com",
     "address": {
       "@type": "PostalAddress",
@@ -24,9 +28,8 @@ const Index = () => {
       "addressRegion": "SP",
       "addressCountry": "BR"
     },
-    "url": "https://arfri.com.br",
-    "priceRange": "$$",
-    "areaServed": ["Indaiatuba", "Salto", "Itu", "Campinas"]
+    "areaServed": ["Indaiatuba", "Salto", "Itu"],
+    "priceRange": "$$"
   };
 
   return (
@@ -35,54 +38,63 @@ const Index = () => {
         <title>AR FRI Climatização | Conserto, Instalação e Limpeza de Ar Condicionado em Indaiatuba, Salto e Itu</title>
         <meta
           name="description"
-          content="Especialistas em ar condicionado em Indaiatuba, Salto e Itu. Conserto no mesmo dia, instalação com tubulação de cobre e higienização profunda. Peça seu orçamento!"
+          content="Assistência técnica especializada em ar condicionado em Indaiatuba, Salto e Itu. Conserto no mesmo dia, instalação em 100% cobre e higienização profunda com 90 dias de garantia."
         />
         <meta
           name="keywords"
-          content="ar condicionado indaiatuba, conserto ar condicionado indaiatuba, instalacao ar condicionado salto, limpeza ar condicionado itu, ar fri climatizacao"
+          content="ar condicionado indaiatuba, conserto ar condicionado salto, instalacao ar condicionado itu, manutencao split inverter indaiatuba"
         />
-        <meta name="author" content="AR FRI Climatização" />
-        <link rel="canonical" href="https://arfri.com.br" />
-
-        <meta property="og:title" content="AR FRI Climatização | Especialistas em Ar Condicionado em Indaiatuba" />
-        <meta property="og:description" content="Conserto, instalação e limpeza de ar condicionado com garantia e atendimento rápido." />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="pt_BR" />
-
+        <link rel="canonical" href="https://arfri.com.br/" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-[#071324] text-white">
-        <Header currentRoute="/" />
+      <div className="min-h-screen bg-[#0A141E] text-white">
+        <Header currentRoute="/" whatsappMessage={WHATSAPP_HOME} />
+
         <main>
+          {/* Hero Section */}
           <Hero
-            badge="Atendimento Especializado em Indaiatuba, Salto e Itu"
+            badgeRegion="Indaiatuba, Salto e Itu / SP"
+            badgeCredential="Chamados até 15h atendidos hoje"
             title={
               <>
-                Seu Ar Condicionado em <br />
-                <span className="text-sky-400">Perfeitas Condições Hoje.</span>
+                Seu ar condicionado parou hoje.<br />
+                <span className="text-[#1D74E8]">Hoje ele volta.</span>
               </>
             }
-            description="Assistência técnica especializada em conserto, instalação padrão fabricante e higienização profunda de ar condicionado residencial e comercial."
-            whatsappMessage="Olá! Vim pelo site da AR FRI e gostaria de um orçamento."
-            bulletPoints={[
-              "Conserto rápido no mesmo dia",
-              "Instalação 100% em tubulação de cobre",
-              "Higienização com bactericida e bolsa coletora",
-              "Garantia de 90 dias com peças originais",
-            ]}
+            description="Conserto, instalação e higienização de ar condicionado em domicílio e empresas. Diagnóstico no local, peças originais e 90 dias de garantia por escrito."
+            whatsappMessage={WHATSAPP_HOME}
           />
+
+          {/* Brands */}
           <Brands />
-          <Services focusedService="all" />
-          <Advantages />
+
+          {/* 01 - Services */}
+          <Services />
+
+          {/* 02 - How it Works */}
+          <HowItWorks />
+
+          {/* 03 - Guarantee */}
+          <Guarantee />
+
+          {/* 04 - Coverage */}
+          <Coverage />
+
+          {/* 05 - Social Proof */}
           <SocialProof />
+
+          {/* 06 - FAQ */}
           <FAQ />
-          <Contact />
+
+          {/* 07 - Contact */}
+          <Contact whatsappMessage={WHATSAPP_HOME} />
         </main>
+
         <Footer />
-        <WhatsAppFloat />
+        <WhatsAppFloat whatsappMessage={WHATSAPP_HOME} />
       </div>
     </>
   );

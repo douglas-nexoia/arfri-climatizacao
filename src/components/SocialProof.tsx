@@ -1,103 +1,86 @@
-import { Star, CheckCircle, Quote } from "lucide-react";
-
-interface Testimonial {
-  name: string;
-  location: string;
-  service: string;
-  rating: number;
-  text: string;
-  date: string;
-}
-
-const testimonials: Testimonial[] = [
+const reviews = [
   {
-    name: "Rodrigo Almeida",
-    location: "Indaiatuba / SP",
-    service: "Conserto de Ar Condicionado",
-    rating: 5,
-    text: "Meu split da sala parou de gelar no auge do calor. O Renato veio no mesmo dia, identificou o vazamento de gás, corrigiu e recarregou. Aparelho gelando como novo! Super honesto e ágil.",
-    date: "Avaliação verificada no Google",
+    initial: "G",
+    name: "Gabriel Garcia",
+    time: "há 2 meses",
+    location: "Indaiatuba",
+    text: "Excelente atendimento! O técnico Renato chegou no horário combinado, diagnosticou que o ar condicionado estava sem gás por conta de um vazamento na flange, fez a correção e recarga na hora. Preço justo e muito profissional.",
   },
   {
-    name: "Mariana Souza",
-    location: "Salto / SP",
-    service: "Instalação Split Inverter",
-    rating: 5,
-    text: "Fiz a instalação de dois aparelhos LG Dual Inverter. Trabalho impecável, tubulação 100% de cobre, vácuo com equipamento digital e acabamento perfeito. Super recomendo a AR FRI!",
-    date: "Avaliação verificada no Google",
+    initial: "V",
+    name: "Valquíria Mello",
+    time: "há 4 meses",
+    location: "Itaici",
+    text: "Fizeram a instalação de dois aparelhos inverter no meu apartamento. Serviço impecável, usaram tubulação 100% de cobre e fizeram o teste de vácuo direitinho. Não deixaram sujeira nenhuma na parede. Recomendo muito!",
   },
   {
-    name: "Carlos Eduardo Ferraz",
-    location: "Itu / SP",
-    service: "Higienização Completa",
-    rating: 5,
-    text: "Excelente atendimento! Fizeram a higienização com bolsa coletora, não caiu uma gota d'água na minha parede ou no piso. Acabou o cheiro ruim e o ar ficou bem mais forte. Nota 10.",
-    date: "Avaliação verificada no Google",
-  },
-  {
-    name: "Patrícia Mendes",
-    location: "Indaiatuba / SP",
-    service: "Manutenção Preventiva",
-    rating: 5,
-    text: "Profissionais pontuais, uniformizados e muito educados. Explicaram tudo o que precisava ser feito com clareza e preço justo. Com certeza virou minha assistência de confiança.",
-    date: "Avaliação verificada no Google",
+    initial: "M",
+    name: "Marcos Vinicius Silva",
+    time: "há 1 mês",
+    location: "Salto",
+    text: "Meu ar começou a vazar água dentro do quarto no meio da noite. Chamei a AR FRI pela manhã e na hora do almoço o técnico já estava aqui e resolveu a desobstrução do dreno e fez a higienização completa. 10/10.",
   },
 ];
 
 const SocialProof = () => {
   return (
-    <section className="section-padding bg-[#050D18] relative border-t border-white/10">
-      <div className="container-max px-4 sm:px-6 lg:px-8">
-        {/* Header with Google Badge */}
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 bg-slate-900 border border-white/15 px-4 py-2 rounded-full mb-4 shadow-lg">
-            <div className="flex items-center text-amber-400">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-              ))}
+    <section className="bg-[#F5F4F1] text-[#14212E] py-16 sm:py-24">
+      <div className="container-max">
+        {/* Header with Aggregated Google Score */}
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
+          <div>
+            <div className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#1D74E8] mb-3">
+              05 — Prova
             </div>
-            <span className="text-white text-xs sm:text-sm font-bold">5.0 / 5.0 no Google</span>
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] leading-[1.05] tracking-[-0.03em] text-[#14212E]">
+              Avaliações reais do Google
+            </h2>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4">
-            O Que Nossos Clientes <span className="text-sky-400">Dizem</span>
-          </h2>
-          <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
-            A satisfação dos nossos clientes em Indaiatuba, Salto e Itu é a nossa maior garantia.
-          </p>
+          <div className="flex items-center gap-4 bg-white border border-[#E4E2DD] rounded-md px-5 py-3.5 shadow-sm">
+            <div className="font-heading font-extrabold text-3xl sm:text-4xl text-[#14212E] tracking-tight">
+              5,0
+            </div>
+            <div>
+              <div className="text-[#1D74E8] text-sm tracking-widest">
+                ★★★★★
+              </div>
+              <div className="font-sans text-xs text-[#68737E] mt-1">
+                142 avaliações · Google
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Testimonial Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((item, index) => (
+        {/* 3 Review Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {reviews.map((r, idx) => (
             <div
-              key={index}
-              className="bg-slate-900/80 border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:border-sky-400/40 hover:bg-slate-900 transition-all duration-300 shadow-lg relative group"
+              key={idx}
+              className="bg-white border border-[#E4E2DD] rounded-md p-6 sm:p-7 flex flex-col justify-between"
             >
               <div>
-                {/* Rating Stars */}
-                <div className="flex items-center gap-1 text-amber-400 mb-4">
-                  {[...Array(item.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-full bg-[#EDEBE6] flex items-center justify-center font-heading font-bold text-base text-[#5A646E] shrink-0">
+                    {r.initial}
+                  </div>
+                  <div>
+                    <div className="font-sans font-semibold text-sm sm:text-[15px] text-[#14212E]">
+                      {r.name}
+                    </div>
+                    <div className="font-sans text-xs text-[#8A9099]">
+                      {r.time} · {r.location}
+                    </div>
+                  </div>
                 </div>
 
-                {/* Review Text */}
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-6 italic">
-                  "{item.text}"
+                <div className="text-[#1D74E8] text-xs tracking-widest mb-3">
+                  ★★★★★
+                </div>
+
+                <p className="font-sans text-sm sm:text-[15px] text-[#3E4A56] leading-relaxed">
+                  "{r.text}"
                 </p>
-              </div>
-
-              {/* Author Info */}
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-                <div>
-                  <h4 className="text-white font-bold text-sm">{item.name}</h4>
-                  <span className="text-slate-400 text-xs">{item.location}</span>
-                </div>
-                <div className="flex items-center gap-1 text-emerald-400 text-xs font-semibold">
-                  <CheckCircle className="w-3.5 h-3.5" />
-                  <span>Google</span>
-                </div>
               </div>
             </div>
           ))}

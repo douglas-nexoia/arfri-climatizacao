@@ -1,76 +1,90 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { useState } from "react";
 
-interface FAQProps {
-  customFaqs?: Array<{ question: string; answer: string }>;
+interface FAQItem {
+  q: string;
+  a: string;
 }
 
-const defaultFaqs = [
+const faqs: FAQItem[] = [
   {
-    question: "Vocês atendem quais cidades da região?",
-    answer: "Atendemos com rapidez em Indaiatuba, Salto e Itu / SP, além de municípios vizinhos da Região Metropolitana de Campinas.",
+    q: "Qual é o prazo de garantia do serviço?",
+    a: "Noventa dias contados a partir da conclusão do serviço, entregues por escrito na ordem de serviço da AR FRI. Cobre as peças substituídas e a mão de obra técnica.",
   },
   {
-    question: "O conserto do ar condicionado é feito na minha casa?",
-    answer: "Sim! Mais de 95% dos problemas (como falta de gás, vazamento de água, capacitor queimado, sensor ou placa) são solucionados no próprio local na mesma visita.",
+    q: "Como funciona o orçamento e a visita?",
+    a: "O técnico avalia o ar condicionado na sua casa ou empresa, identifica a causa da falha (pressão, placa ou mecânica) e explica o procedimento. Nada é feito sem sua autorização prévia.",
   },
   {
-    question: "Por que a instalação com tubulação de cobre é superior?",
-    answer: "A tubulação 100% de cobre suporta a alta pressão dos gases modernos (R410A e R32), não oxida facilmente e previne microvazamentos, além de ser a única exigida pelas grandes marcas para manter a garantia de fábrica.",
+    q: "Vocês atendem no mesmo dia em Indaiatuba?",
+    a: "Na maioria dos casos, sim. Chamados abertos até as 15h costumam ser atendidos ainda no mesmo dia em Indaiatuba, Salto e Itu.",
   },
   {
-    question: "De quanto em quanto tempo devo fazer a higienização do ar condicionado?",
-    answer: "Para residências, o recomendado é a cada 6 meses (ou 1 ano com pouco uso). Para comércios, escritórios e consultórios, o recomendado é trimestral ou semestral para cumprir as normas de saúde e manter o ar livre de fungos e bactérias.",
+    q: "Quais marcas de ar condicionado vocês atendem?",
+    a: "Daikin, Fujitsu, LG, Samsung, Midea, Gree, Carrier, Elgin, Springer e Consul, entre outras. Trabalhamos exclusivamente com peças e componentes de padrão original.",
   },
   {
-    question: "Qual o prazo de garantia dos serviços prestados?",
-    answer: "Oferecemos 90 dias de garantia por escrito em todos os serviços executados e peças originais substituídas pela AR FRI Climatização.",
+    q: "Trabalham com aparelhos de tecnologia Inverter?",
+    a: "Sim. Nossos técnicos possuem treinamento específico para diagnósticos de placas eletrônicas inverter, sensores e compressores de frequência variável.",
   },
   {
-    question: "Vocês atendem aparelhos Inverter e Multi-Split?",
-    answer: "Sim! Somos especialistas em tecnologia Inverter (LG Dual Inverter, Samsung WindFree, Daikin, Midea, Fujitsu e outras), com instrumental para teste eletrônico de placas e sensores.",
+    q: "A limpeza e higienização suja a parede ou o piso?",
+    a: "Não. Utilizamos uma bolsa coletora impermeável profissional que isola o aparelho na parede, canalizando toda a água e os resíduos diretamente para o reservatório.",
   },
 ];
 
-const FAQ = ({ customFaqs = defaultFaqs }: FAQProps) => {
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const toggle = (idx: number) => {
+    setOpenIndex(openIndex === idx ? null : idx);
+  };
+
   return (
-    <section id="faq" className="section-padding bg-[#071324] relative">
-      <div className="container-max px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-12">
-            <span className="inline-block text-sky-400 font-semibold text-xs sm:text-sm uppercase tracking-wider bg-sky-500/10 border border-sky-400/20 px-3.5 py-1.5 rounded-full mb-4">
-              Tire Suas Dúvidas
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-              Perguntas <span className="text-sky-400">Frequentes</span>
+    <section className="bg-[#0A141E] text-white py-16 sm:py-24 border-t border-white/10">
+      <div className="container-max">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+          {/* Left Column: Title & Text */}
+          <div className="lg:col-span-5">
+            <div className="font-mono text-[11px] tracking-[0.18em] uppercase text-[#1D74E8] mb-3">
+              06 — Dúvidas
+            </div>
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] leading-[1.05] tracking-[-0.03em] mb-4">
+              As perguntas<br />que sempre chegam
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base">
-              Tudo o que você precisa saber sobre manutenção, instalação e limpeza de ar condicionado.
+            <p className="font-sans text-base text-white/55 leading-relaxed max-w-[360px]">
+              Não achou sua dúvida? Manda uma mensagem no WhatsApp que a nossa equipe responde em minutos.
             </p>
           </div>
 
-          {/* Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
-            {customFaqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="bg-slate-900/80 border border-white/10 rounded-2xl px-6 data-[state=open]:border-sky-400/50 data-[state=open]:bg-slate-900 transition-all duration-300 shadow-md"
-              >
-                <AccordionTrigger className="text-left font-bold text-white hover:text-sky-400 py-5 hover:no-underline text-base sm:text-lg">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-slate-300 pb-5 leading-relaxed text-sm sm:text-base">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          {/* Right Column: Accordion */}
+          <div className="lg:col-span-7">
+            {faqs.map((faq, i) => {
+              const isOpen = openIndex === i;
+
+              return (
+                <div
+                  key={i}
+                  onClick={() => toggle(i)}
+                  className="border-b border-white/10 py-5 sm:py-6 cursor-pointer select-none group"
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <h3 className="font-heading font-semibold text-base sm:text-lg text-white group-hover:text-[#1D74E8] transition-colors">
+                      {faq.q}
+                    </h3>
+                    <span className="font-heading text-2xl font-light text-[#1D74E8] leading-none shrink-0">
+                      {isOpen ? "−" : "+"}
+                    </span>
+                  </div>
+
+                  {isOpen && (
+                    <p className="font-sans text-sm sm:text-[15.5px] text-white/65 leading-relaxed mt-3.5 max-w-[620px]">
+                      {faq.a}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

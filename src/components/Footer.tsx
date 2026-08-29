@@ -1,97 +1,75 @@
-import { MapPin, Phone, Mail, Clock, MessageCircle, Shield } from "lucide-react";
-import arfriLogo from "@/assets/arfri-logo.svg";
-
-const WHATSAPP_LINK = "https://wa.me/5519997871301?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20AR%20FRI%20e%20gostaria%20de%20um%20atendimento.";
-
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
-  const cities = ["Indaiatuba / SP", "Salto / SP", "Itu / SP", "Campinas e Região"];
-
   return (
-    <footer className="bg-[#050D18] text-white border-t border-white/10 pt-16 pb-12">
-      <div className="container-max px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Brand */}
-          <div className="space-y-4">
-            <a href="/" className="inline-block">
-              <img src={arfriLogo} alt="AR FRI Climatização" className="h-11 w-auto" />
+    <footer className="bg-[#0A141E] border-t border-white/10 pt-14 pb-8 text-white">
+      <div className="container-max">
+        {/* 4 Columns Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10">
+          {/* Column 1: Company Description */}
+          <div>
+            <a href="/" className="inline-flex items-baseline gap-0.5 font-heading font-extrabold text-2xl tracking-tight text-white mb-4">
+              <span>AR FRI</span>
+              <span className="text-[#1D74E8]">.</span>
             </a>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Especialistas em conserto, instalação e higienização de ar condicionado residencial e comercial em Indaiatuba, Salto e Itu.
+            <p className="font-sans text-sm text-white/50 leading-relaxed max-w-[280px]">
+              Assistência técnica, instalação especializada e higienização de ar condicionado em Indaiatuba, Salto e Itu.
             </p>
-            <div className="flex items-center gap-2 text-xs font-semibold text-sky-400 bg-sky-500/10 px-3 py-1.5 rounded-lg w-fit border border-sky-400/20">
-              <Shield className="w-4 h-4 text-sky-400" />
-              <span>Garantia de 90 dias com peças originais</span>
+          </div>
+
+          {/* Column 2: Services */}
+          <div>
+            <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-white/40 mb-4">
+              Serviços
+            </div>
+            <div className="grid gap-2.5 font-sans text-sm">
+              <a href="/conserto-ar-condicionado" className="text-white/70 hover:text-white transition-colors">
+                Conserto de ar condicionado
+              </a>
+              <a href="/instalacao-ar-condicionado" className="text-white/70 hover:text-white transition-colors">
+                Instalação Split & Inverter
+              </a>
+              <a href="/limpeza-higienizacao-ar-condicionado" className="text-white/70 hover:text-white transition-colors">
+                Higienização e limpeza
+              </a>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Column 3: Company */}
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-sky-400 mb-4">Páginas do Site</h4>
-            <ul className="space-y-2.5 text-sm text-slate-300">
-              <li>
-                <a href="/" className="hover:text-sky-400 transition-colors">Início</a>
-              </li>
-              <li>
-                <a href="/conserto-ar-condicionado" className="hover:text-sky-400 transition-colors">Conserto e Manutenção</a>
-              </li>
-              <li>
-                <a href="/instalacao-ar-condicionado" className="hover:text-sky-400 transition-colors">Instalação Split & Inverter</a>
-              </li>
-              <li>
-                <a href="/limpeza-higienizacao-ar-condicionado" className="hover:text-sky-400 transition-colors">Higienização e Limpeza</a>
-              </li>
-            </ul>
+            <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-white/40 mb-4">
+              Empresa
+            </div>
+            <div className="grid gap-2.5 font-sans text-sm">
+              <a href="/#como" className="text-white/70 hover:text-white transition-colors">
+                Como funciona
+              </a>
+              <a href="/#onde" className="text-white/70 hover:text-white transition-colors">
+                Onde atendemos
+              </a>
+              <a href="/#garantia" className="text-white/70 hover:text-white transition-colors">
+                Garantia e transparência
+              </a>
+            </div>
           </div>
 
-          {/* Service Areas */}
+          {/* Column 4: Direct Contacts */}
           <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-sky-400 mb-4">Cidades Atendidas</h4>
-            <ul className="space-y-2 text-sm text-slate-300">
-              {cities.map((city) => (
-                <li key={city} className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400" />
-                  <span>{city}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider text-sky-400 mb-4">Atendimento</h4>
-            <ul className="space-y-3 text-sm text-slate-300">
-              <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-sky-400 shrink-0" />
-                <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sky-400 font-bold hover:underline"
-                >
-                  (19) 99787-1301 (WhatsApp)
-                </a>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-sky-400 shrink-0" />
-                <span className="text-slate-300 text-xs">Renatotortorelli95@gmail.com</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
-                <span>Indaiatuba – Salto – Itu / SP</span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-sky-400 shrink-0" />
-                <span>Seg a Sáb: 08h às 18h</span>
-              </li>
-            </ul>
+            <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-white/40 mb-4">
+              Contato
+            </div>
+            <div className="grid gap-2.5 font-sans text-sm text-white/70">
+              <span className="font-mono text-white">(19) 99787-1301</span>
+              <span>Seg a sáb, 8h às 18h</span>
+              <span>Indaiatuba • Salto • Itu / SP</span>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {currentYear} AR FRI Climatização e Ar Condicionado. Todos os direitos reservados.</p>
-          <p>Indaiatuba, Salto e Itu / SP</p>
+        {/* Copyright Line */}
+        <div className="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4 font-sans text-xs text-white/40">
+          <span>© {new Date().getFullYear()} AR FRI Climatização. Todos os direitos reservados.</span>
+          <span className="font-mono text-[11px] tracking-wider text-white/30 uppercase">
+            PADRÃO DE ALTA CONVERSÃO
+          </span>
         </div>
       </div>
     </footer>
