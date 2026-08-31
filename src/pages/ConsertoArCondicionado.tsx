@@ -181,7 +181,11 @@ const ConsertoArCondicionado = () => {
           </section>
 
           <HowItWorks />
-          <Guarantee />
+          <Guarantee
+            serviceImage="/images/servico-conserto-ar.webp"
+            imageAlt="Conserto de Ar Condicionado Split em Indaiatuba, Salto e Itu"
+            caption="Diagnóstico no local com teste de pressão, peças originais e 90 dias de garantia."
+          />
           <Coverage />
           <SocialProof />
 

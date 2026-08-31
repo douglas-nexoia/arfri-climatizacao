@@ -181,7 +181,11 @@ const LimpezaHigienizacao = () => {
           </section>
 
           <HowItWorks />
-          <Guarantee />
+          <Guarantee
+            serviceImage="/images/servico-limpeza-ar.webp"
+            imageAlt="Limpeza e Higienização Técnica de Ar Condicionado em Indaiatuba"
+            caption="Higienização técnica profunda com bolsa coletora, bactericida e eliminação de 99,9% dos fungos."
+          />
           <Coverage />
           <SocialProof />
 

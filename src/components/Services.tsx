@@ -12,6 +12,8 @@ const services = [
     slotText: "manutenção corretiva · diagnóstico no local",
     desc: "Não gela, pinga água na parede, compressor desarma ou exibe código de erro no display. Diagnóstico preciso e conserto no mesmo dia com peças originais.",
     tags: ["Não gela", "Carga de gás", "Placa Inverter", "Compressor"],
+    image: "/images/servico-conserto-ar.webp",
+    imageAlt: "Conserto de ar condicionado Split High Wall em residência",
   },
   {
     id: "instalacao",
@@ -23,6 +25,8 @@ const services = [
     slotText: "tubulação 100% cobre · vácuo digital",
     desc: "Instalação residencial e comercial preservando a garantia do fabricante. Tubulação 100% em cobre, fixação nivelada e teste de estanqueidade.",
     tags: ["100% Cobre", "Vácuo digital", "Suporte reforçado", "Multi-Split"],
+    image: "/images/servico-instalacao-ar.webp",
+    imageAlt: "Instalação profissional de ar condicionado Split",
   },
   {
     id: "limpeza",
@@ -34,6 +38,8 @@ const services = [
     slotText: "bolsa coletora · bactericida biodegradável",
     desc: "Elimina 99,9% de fungos, ácaros, bactérias e mau cheiro. Limpeza técnica profunda com bolsa coletora sem respingos na sua parede ou piso.",
     tags: ["Bolsa coletora", "Anti-fungos", "Sem sujeira", "Economia de energia"],
+    image: "/images/servico-limpeza-ar.webp",
+    imageAlt: "Higienização profunda e limpeza de ar condicionado",
   },
 ];
 
@@ -65,21 +71,26 @@ const Services = () => {
             return (
               <div
                 key={s.id}
-                className="bg-white border border-[#E4E2DD] rounded-md overflow-hidden flex flex-col justify-between hover:border-[#14212E] transition-colors"
+                className="bg-white border border-[#E4E2DD] rounded-xl overflow-hidden flex flex-col justify-between hover:border-[#14212E] hover:shadow-lg transition-all duration-300 group"
               >
-                {/* Technical Graphic Header */}
-                <div 
-                  className="h-40 bg-[#EDEBE6] p-6 flex flex-col justify-between border-b border-[#E4E2DD]"
-                  style={{
-                    backgroundImage: 'repeating-linear-gradient(58deg, rgba(20,33,46,.045) 0 2px, transparent 2px 13px)'
-                  }}
-                >
-                  <div className="w-10 h-10 rounded-md bg-white border border-[#E4E2DD] flex items-center justify-center text-[#1D74E8]">
-                    <Icon className="w-5 h-5" />
+                {/* Visual Photographic Banner */}
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-900 border-b border-[#E4E2DD]">
+                  <img
+                    src={s.image}
+                    alt={s.imageAlt}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
+
+                  <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+                    <div className="w-9 h-9 rounded-lg bg-white/95 backdrop-blur-md border border-[#E4E2DD] flex items-center justify-center text-[#1D74E8] shadow-sm">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <span className="font-mono text-[10px] font-bold tracking-wide text-white bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full uppercase border border-white/20">
+                      {s.slotText}
+                    </span>
                   </div>
-                  <span className="font-mono text-[10.5px] tracking-wide text-[#68737E] uppercase">
-                    {s.slotText}
-                  </span>
                 </div>
 
                 {/* Card Content */}

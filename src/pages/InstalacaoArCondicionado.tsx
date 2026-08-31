@@ -181,7 +181,11 @@ const InstalacaoArCondicionado = () => {
           </section>
 
           <HowItWorks />
-          <Guarantee />
+          <Guarantee
+            serviceImage="/images/servico-instalacao-ar.webp"
+            imageAlt="Instalação Padrão de Fábrica de Ar Condicionado em Indaiatuba"
+            caption="Tubulação 100% cobre, teste de estanqueidade e preservação da garantia do fabricante."
+          />
           <Coverage />
           <SocialProof />
 

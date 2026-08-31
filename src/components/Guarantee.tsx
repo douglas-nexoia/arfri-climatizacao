@@ -1,4 +1,11 @@
+import React from 'react';
 import acUnitImg from "@/assets/ac-unit.jpg";
+
+interface GuaranteeProps {
+  serviceImage?: string;
+  imageAlt?: string;
+  caption?: string;
+}
 
 const guarantees = [
   {
@@ -19,7 +26,13 @@ const guarantees = [
   },
 ];
 
-const Guarantee = () => {
+const Guarantee: React.FC<GuaranteeProps> = ({
+  serviceImage,
+  imageAlt = "Ar condicionado moderno com instalação técnica AR FRI",
+  caption = "Tubulação 100% cobre e teste de estanqueidade",
+}) => {
+  const displayImage = serviceImage || acUnitImg;
+
   return (
     <section id="garantia" className="bg-[#F5F4F1] text-[#14212E] py-16 sm:py-24">
       <div className="container-max">
@@ -56,18 +69,23 @@ const Guarantee = () => {
 
           {/* Right Column: High quality AC Unit Photo (No fake stock people) */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="aspect-[4/5] w-full max-w-[420px] rounded-md overflow-hidden relative bg-[#EDEBE6] shadow-sm border border-[#E4E2DD]">
+            <div className="aspect-[4/5] w-full max-w-[420px] rounded-2xl overflow-hidden relative bg-[#EDEBE6] shadow-md border border-[#E4E2DD] group">
               <img
-                src={acUnitImg}
-                alt="Ar condicionado moderno com instalação técnica AR FRI"
-                className="w-full h-full object-cover filter brightness-95"
+                src={displayImage}
+                alt={imageAlt}
+                className="w-full h-full object-cover filter brightness-95 group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent flex items-end p-6">
-                <span className="font-mono text-xs text-white/95 leading-relaxed drop-shadow">
-                  Padrão técnico rigoroso<br />
-                  <span className="text-white/70">Tubulação 100% cobre e teste de vácuo</span>
-                </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-6">
+                <div>
+                  <span className="font-mono text-[10px] font-bold text-white bg-[#1D74E8] px-2.5 py-1 rounded-full uppercase shadow-md inline-block mb-2">
+                    Garantia 90 Dias
+                  </span>
+                  <p className="font-mono text-xs text-white/95 leading-relaxed drop-shadow">
+                    Padrão técnico AR FRI<br />
+                    <span className="text-white/75">{caption}</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
