@@ -85,7 +85,7 @@ const SocialProof = () => {
                 ★★★★★
               </div>
               <div className="font-sans text-xs text-[#68737E] mt-1">
-                Avaliações · Google
+                142 avaliações · Google
               </div>
             </div>
           </div>
