@@ -17,6 +17,7 @@ const WhatsAppFloat = ({
         onClick={trackWhatsAppConversion}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Falar com técnico no WhatsApp"
         className="flex items-center gap-3 bg-[#22C55E] hover:bg-[#1eb354] text-[#062B14] font-sans font-bold text-sm sm:text-base px-5 py-3.5 rounded-full shadow-2xl transition-transform hover:scale-105 active:scale-95 group"
       >
         <span className="relative flex h-3 w-3">

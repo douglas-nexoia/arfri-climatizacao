@@ -93,7 +93,7 @@ const ConsertoArCondicionado = () => {
           name="keywords"
           content="conserto ar condicionado indaiatuba, manutencao split salto, tecnico ar condicionado itu, recarga gas r410a"
         />
-        <link rel="canonical" href="https://arfri.com.br/conserto-ar-condicionado" />
+        <link rel="canonical" href="https://www.arfriclimatizacao.com.br/conserto-ar-condicionado" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

@@ -93,7 +93,7 @@ const LimpezaHigienizacao = () => {
           name="keywords"
           content="limpeza ar condicionado indaiatuba, higienizacao ar condicionado salto, limpeza split itu, bactericida ar condicionado"
         />
-        <link rel="canonical" href="https://arfri.com.br/limpeza-higienizacao-ar-condicionado" />
+        <link rel="canonical" href="https://www.arfriclimatizacao.com.br/limpeza-higienizacao-ar-condicionado" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

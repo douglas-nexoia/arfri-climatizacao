@@ -44,7 +44,7 @@ const Index = () => {
           name="keywords"
           content="ar condicionado indaiatuba, conserto ar condicionado salto, instalacao ar condicionado itu, manutencao split inverter indaiatuba"
         />
-        <link rel="canonical" href="https://arfri.com.br/" />
+        <link rel="canonical" href="https://www.arfriclimatizacao.com.br/" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

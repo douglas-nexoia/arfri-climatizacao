@@ -93,7 +93,7 @@ const InstalacaoArCondicionado = () => {
           name="keywords"
           content="instalacao ar condicionado indaiatuba, instalador split salto, instalacao ar inverter itu, tubulacao cobre ar condicionado"
         />
-        <link rel="canonical" href="https://arfri.com.br/instalacao-ar-condicionado" />
+        <link rel="canonical" href="https://www.arfriclimatizacao.com.br/instalacao-ar-condicionado" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
