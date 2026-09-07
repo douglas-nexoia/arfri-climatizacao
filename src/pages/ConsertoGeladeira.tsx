@@ -199,7 +199,7 @@ const ConsertoGeladeira = () => {
           <HowItWorks />
 
           <Guarantee
-            serviceImage="/images/servico-conserto-geladeira.jpg"
+            serviceImage="/images/servico-conserto-geladeira.webp"
             imageAlt="Conserto de Geladeiras Frost Free e Inverter em Indaiatuba, Salto e Itu"
             caption="Diagnóstico no local com peças originais e 90 dias de garantia por escrito."
           />

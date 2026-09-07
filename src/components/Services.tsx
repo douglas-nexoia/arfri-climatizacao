@@ -51,7 +51,7 @@ const services = [
     slotText: "frost free · inverter · diagnóstico no local",
     desc: "Não gela a parte de baixo, vaza água na gaveta, apita ou motor desarmando. Manutenção especializada em Frost Free, Duplex, Side by Side e Freezers com peças originais.",
     tags: ["Frost Free", "Inverter", "Carga de gás", "Freezer"],
-    image: "/images/servico-conserto-geladeira.jpg",
+    image: "/images/servico-conserto-geladeira.webp",
     imageAlt: "Conserto especializado de geladeiras e freezers em Indaiatuba, Salto e Itu",
   },
 ];

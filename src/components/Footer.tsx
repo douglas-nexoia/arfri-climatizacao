@@ -13,7 +13,7 @@ const Footer = () => {
               AR FRI<span className="text-[#1D74E8]">.</span>
             </span>
             <p className="text-white/60 leading-relaxed text-sm max-w-[260px] mb-4">
-              Assistência técnica e climatização residencial e comercial. Conserto, instalação e higienização de ar condicionado em Indaiatuba, Salto e Itu.
+              Assistência técnica e climatização residencial e comercial. Conserto, instalação e higienização de ar condicionado, geladeiras e freezers em Indaiatuba, Salto e Itu.
             </p>
             <div className="font-mono text-xs text-[#1D74E8]">
               90 dias de garantia por escrito
@@ -39,6 +39,11 @@ const Footer = () => {
               <li>
                 <a href="/limpeza-higienizacao-ar-condicionado" className="hover:text-white transition-colors">
                   Higienização & Limpeza
+                </a>
+              </li>
+              <li>
+                <a href="/conserto-geladeira" className="hover:text-white transition-colors">
+                  Geladeiras & Freezers
                 </a>
               </li>
             </ul>
