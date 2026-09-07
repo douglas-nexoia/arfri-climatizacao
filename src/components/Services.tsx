@@ -1,4 +1,4 @@
-import { ArrowRight, Wrench, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Wrench, ShieldCheck, Sparkles, Snowflake } from "lucide-react";
 import { trackWhatsAppConversion } from "@/lib/tracking";
 
 const services = [
@@ -41,6 +41,19 @@ const services = [
     image: "/images/servico-limpeza-ar.webp",
     imageAlt: "Higienização profunda e limpeza de ar condicionado",
   },
+  {
+    id: "geladeira",
+    kicker: "04 — Refrigeração & Freezers",
+    title: "Geladeiras & Freezers",
+    route: "/conserto-geladeira",
+    whatsappRef: "Olá, preciso de conserto na minha geladeira / freezer (Ref: #geladeira)",
+    icon: Snowflake,
+    slotText: "frost free · inverter · diagnóstico no local",
+    desc: "Não gela a parte de baixo, vaza água na gaveta, apita ou motor desarmando. Manutenção especializada em Frost Free, Duplex, Side by Side e Freezers com peças originais.",
+    tags: ["Frost Free", "Inverter", "Carga de gás", "Freezer"],
+    image: "/images/servico-conserto-geladeira.jpg",
+    imageAlt: "Conserto especializado de geladeiras e freezers em Indaiatuba, Salto e Itu",
+  },
 ];
 
 const Services = () => {
@@ -58,12 +71,12 @@ const Services = () => {
             </h2>
           </div>
           <p className="font-sans text-sm sm:text-[16.5px] text-[#68737E] max-w-[360px] leading-relaxed">
-            Três especialidades com atendimento técnico ágil em Indaiatuba, Salto e Itu.
+            Especialidades com atendimento técnico ágil em Indaiatuba, Salto e Itu.
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) => {
             const waUrl = `https://wa.me/5519997871301?text=${encodeURIComponent(s.whatsappRef)}`;
             const Icon = s.icon;

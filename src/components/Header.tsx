@@ -62,6 +62,16 @@ const Header = ({
           >
             Higienização
           </a>
+          <a
+            href="/conserto-geladeira"
+            className={`font-sans text-sm font-medium transition-colors ${
+              currentRoute === "/conserto-geladeira"
+                ? "text-[#1D74E8] font-semibold"
+                : "text-white/70 hover:text-white"
+            }`}
+          >
+            Geladeiras
+          </a>
         </nav>
 
         {/* Contact info & CTA */}

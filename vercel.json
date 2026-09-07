@@ -51,6 +51,30 @@
     {
       "source": "/higienizacao",
       "destination": "/limpeza-higienizacao-ar-condicionado.html"
+    },
+    {
+      "source": "/conserto-geladeira",
+      "destination": "/conserto-geladeira.html"
+    },
+    {
+      "source": "/conserto-geladeira/",
+      "destination": "/conserto-geladeira.html"
+    },
+    {
+      "source": "/conserto-geladeira-freezer",
+      "destination": "/conserto-geladeira.html"
+    },
+    {
+      "source": "/conserto-geladeira-freezer/",
+      "destination": "/conserto-geladeira.html"
+    },
+    {
+      "source": "/geladeira",
+      "destination": "/conserto-geladeira.html"
+    },
+    {
+      "source": "/geladeira/",
+      "destination": "/conserto-geladeira.html"
     }
   ]
 }

@@ -23,6 +23,7 @@ export default defineConfig(() => ({
         conserto: path.resolve(__dirname, "conserto-ar-condicionado.html"),
         instalacao: path.resolve(__dirname, "instalacao-ar-condicionado.html"),
         limpeza: path.resolve(__dirname, "limpeza-higienizacao-ar-condicionado.html"),
+        geladeira: path.resolve(__dirname, "conserto-geladeira.html"),
       },
       output: {
         manualChunks: {

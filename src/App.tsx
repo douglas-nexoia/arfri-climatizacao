@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ConsertoArCondicionado from "./pages/ConsertoArCondicionado";
 import InstalacaoArCondicionado from "./pages/InstalacaoArCondicionado";
 import LimpezaHigienizacao from "./pages/LimpezaHigienizacao";
+import ConsertoGeladeira from "./pages/ConsertoGeladeira";
 const LazyNotFound = lazy(() => import("./pages/NotFound"));
 
 const App = () => (
@@ -42,6 +43,11 @@ const App = () => (
           <Route path="/limpeza-ar-condicionado" element={<LimpezaHigienizacao />} />
           <Route path="/limpeza" element={<LimpezaHigienizacao />} />
           <Route path="/higienizacao" element={<LimpezaHigienizacao />} />
+
+          {/* Rota 4: Conserto & Manutenção de Geladeiras e Freezers */}
+          <Route path="/conserto-geladeira" element={<ConsertoGeladeira />} />
+          <Route path="/conserto-geladeira-freezer" element={<ConsertoGeladeira />} />
+          <Route path="/geladeira" element={<ConsertoGeladeira />} />
 
           {/* Catch-all 404 Route */}
           <Route path="*" element={<LazyNotFound />} />
