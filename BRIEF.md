@@ -75,16 +75,17 @@
 
 ## 5. SERVIÇOS, PRODUTOS E ROTAS
 
-**Escopo de atuação (100% Climatização & Ar-Condicionado):**
+**Escopo de atuação (Climatização & PMOC prioritários na Home + Rota dedicada de Refrigeração para campanha ativa):**
 
-- Conserto e Manutenção Corretiva (não gela, pinga água, códigos de erro, placa inverter, compressor, carga de gás)
-- Instalação Padrão de Fábrica (100% tubulação em cobre, teste de estanqueidade e vácuo com vacuômetro digital)
-- Limpeza e Higienização Química Profunda (bolsa coletora impermeável e bactericida padrão ANVISA)
+- Conserto e Manutenção Corretiva de Ar-Condicionado (não gela, pinga água, códigos de erro, placa inverter, compressor, carga de gás)
+- Instalação Padrão de Fábrica de Ar-Condicionado (100% tubulação em cobre, teste de estanqueidade e vácuo com vacuômetro digital)
+- Limpeza e Higienização Química Profunda de Ar-Condicionado (bolsa coletora impermeável e bactericida padrão ANVISA)
 - Contratos e Implantação de PMOC (Lei Federal 13.589/2018 para empresas, clínicas, escolas e escritórios com ART/TRT e laudo técnico)
+- Conserto de Geladeiras Frost Free, Duplex, Inverter, Side by Side, French Door e Freezers verticais/horizontais (rota dedicada `/conserto-geladeira` + aliases `/conserto-geladeira-freezer` e `/geladeira`)
 
 **Carro-chefe (maior demanda / pill pré-selecionada da Home):** `Conserto` ➔ `pages[index].defaultCheckedPill`
 
-**Rotas do site (5 páginas planejadas)** ➔ `pages`
+**Rotas do site (6 páginas planejadas + rewrites de compatibilidade)** ➔ `pages`
 
 | Rota (URL) | Serviço / Campanha | Chave da mensagem | Imagem do Hero |
 |---|---|---|---|
@@ -93,6 +94,7 @@
 | `/instalacao-ar-condicionado` | Instalação Padrão de Fábrica | `instalacao` | `/images/hero-instalacao.webp` |
 | `/limpeza-higienizacao-ar-condicionado` | Higienização Química Profunda | `higienizacao` | `/images/hero-higienizacao.webp` |
 | `/pmoc-ar-condicionado` | Contratos e Implantação de PMOC (Lei 13.589/2018) | `pmoc` | `/images/hero-pmoc.webp` |
+| `/conserto-geladeira` | Conserto de Geladeiras e Freezers *(com rewrites `/conserto-geladeira-freezer` e `/geladeira`)* | `geladeira` | `/images/hero-geladeira.webp` |
 
 **Agrupamento nos 3 cards da Home** ➔ `pages[index].servicesSection.cards`
 
@@ -127,7 +129,7 @@
 - Carrier
 - Elgin
 
-> Nota: Equipamentos **Springer** também são atendidos normalmente (mencionado no copy/FAQ junto à linha Midea Carrier).
+> Nota: Equipamentos **Springer** também são atendidos normalmente (mencionado no copy/FAQ junto à linha Midea Carrier). Na rota `/conserto-geladeira`, são exibidas via override `page.brands` as 8 marcas de refrigeração: `Brastemp`, `Consul`, `Electrolux`, `Samsung`, `LG`, `Panasonic`, `Metalfrio`, `Midea`.
 
 **Marcas das quais a empresa se declara AUTORIZADA:**
 - PENDENTE (Atuação como empresa especializada independente multimarcas)
@@ -162,6 +164,7 @@
 
 > Toda mensagem de WhatsApp (`tracking.messages`) deve conter literalmente `"vim pelo site, gostaria de um atendimento"`.
 > Mensagem específica da rota PMOC: `"Olá! Vim pelo site, gostaria de um atendimento para contrato de PMOC ou laudo técnico de ar-condicionado."`
+> Mensagem específica da rota Geladeira: `"Olá! Vim pelo site, gostaria de um atendimento para conserto de Geladeira ou Freezer."`
 
 ## 9. INFORMAÇÕES PARA O FAQ
 
@@ -174,8 +177,8 @@
 
 | Item | Valor |
 |---|---|
-| Aparelhos que **devem** aparecer | Ar-condicionado Split Hi-Wall, Cassete/Piso-Teto comercial, condensadoras externas, ferramentas de refrigeração (manifold digital, bomba de vácuo, vacuômetro), bolsa coletora de higienização e prancheta técnica/laudo PMOC em ambiente corporativo. |
-| Aparelhos que **NÃO podem** aparecer (fora do escopo) | **PROIBIDO:** Geladeiras, freezers, máquinas de lavar, lava e seca, lava-louças, micro-ondas, fogões, cooktops ou fornos. |
+| Aparelhos que **devem** aparecer | **Rotas de Climatização/PMOC:** Ar-condicionado Split Hi-Wall, Cassete/Piso-Teto comercial, condensadoras externas, manifold digital, bomba de vácuo, bolsa coletora e prancheta técnica. **Rota `/conserto-geladeira`:** Geladeira Frost Free inox aberta / Freezer e multímetro digital. |
+| Aparelhos que **NÃO podem** aparecer (fora do escopo) | **Rotas de Climatização/PMOC:** PROIBIDO geladeiras, lavadoras, micro-ondas, fogões/fornos. **Globalmente:** PROIBIDO máquinas de lavar, lava e seca, lava-louças, micro-ondas, fogões, cooktops ou fornos. |
 | Ambiente predominante | Residências, condomínios, clínicas e escritórios modernos em Indaiatuba, Salto e Itu. |
 
 > Uniforme sempre **100% liso**, sem logo, texto ou crachá de terceiros.

@@ -22,19 +22,27 @@
   "conserto": "Olá! Vim pelo site, gostaria de um atendimento para conserto de ar-condicionado.",
   "instalacao": "Olá! Vim pelo site, gostaria de um atendimento para instalação de ar-condicionado.",
   "higienizacao": "Olá! Vim pelo site, gostaria de um atendimento para limpeza e higienização de ar-condicionado.",
-  "pmoc": "Olá! Vim pelo site, gostaria de um atendimento para contrato de PMOC ou laudo técnico de ar-condicionado."
+  "pmoc": "Olá! Vim pelo site, gostaria de um atendimento para contrato de PMOC ou laudo técnico de ar-condicionado.",
+  "geladeira": "Olá! Vim pelo site, gostaria de um atendimento para conserto de Geladeira ou Freezer."
 };
   const ROUTE_SERVICE_MAP = {
   "/conserto-ar-condicionado": "conserto",
   "/instalacao-ar-condicionado": "instalacao",
   "/limpeza-higienizacao-ar-condicionado": "higienizacao",
-  "/pmoc-ar-condicionado": "pmoc"
+  "/pmoc-ar-condicionado": "pmoc",
+  "/conserto-geladeira": "geladeira",
+  "/conserto-geladeira-freezer": "geladeira",
+  "/geladeira": "geladeira"
 };
   const PILL_SERVICE_MAP = {
   "Conserto": "conserto",
   "Instalação": "instalacao",
   "Higienização": "higienizacao",
-  "PMOC": "pmoc"
+  "PMOC": "pmoc",
+  "Frost Free": "geladeira",
+  "Side by Side": "geladeira",
+  "Freezer": "geladeira",
+  "Geladeira Inox": "geladeira"
 };
 
   function setCookie(name, val, days) {

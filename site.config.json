@@ -39,9 +39,20 @@
       "conserto": "Olá! Vim pelo site, gostaria de um atendimento para conserto de ar-condicionado.",
       "instalacao": "Olá! Vim pelo site, gostaria de um atendimento para instalação de ar-condicionado.",
       "higienizacao": "Olá! Vim pelo site, gostaria de um atendimento para limpeza e higienização de ar-condicionado.",
-      "pmoc": "Olá! Vim pelo site, gostaria de um atendimento para contrato de PMOC ou laudo técnico de ar-condicionado."
+      "pmoc": "Olá! Vim pelo site, gostaria de um atendimento para contrato de PMOC ou laudo técnico de ar-condicionado.",
+      "geladeira": "Olá! Vim pelo site, gostaria de um atendimento para conserto de Geladeira ou Freezer."
     }
   },
+  "rewrites": [
+    {
+      "source": "/conserto-geladeira-freezer",
+      "destination": "/conserto-geladeira.html"
+    },
+    {
+      "source": "/geladeira",
+      "destination": "/conserto-geladeira.html"
+    }
+  ],
   "devicePills": [
     {
       "label": "Conserto",
@@ -224,18 +235,15 @@
       ],
       "heroStats": [
         {
-          "num": "90",
-          "suffix": " dias",
+          "value": "90 dias",
           "label": "Garantia formal OS"
         },
         {
-          "num": "4,6",
-          "suffix": " ★",
+          "value": "4,6 ★",
           "label": "142 avaliações Google"
         },
         {
-          "num": "100%",
-          "suffix": " cobre",
+          "value": "100% cobre",
           "label": "Vácuo digital e padrão"
         }
       ],
@@ -256,6 +264,8 @@
               "Carga de Gás"
             ],
             "ctaHref": "/conserto-ar-condicionado",
+            "ctaMode": "route",
+            "ctaLabel": "Ver conserto de ar →",
             "serviceKey": "conserto"
           },
           {
@@ -269,6 +279,8 @@
               "Garantia Preservada"
             ],
             "ctaHref": "/instalacao-ar-condicionado",
+            "ctaMode": "route",
+            "ctaLabel": "Ver instalação padrão →",
             "serviceKey": "instalacao"
           },
           {
@@ -282,6 +294,8 @@
               "Emissão de ART / TRT"
             ],
             "ctaHref": "/pmoc-ar-condicionado",
+            "ctaMode": "route",
+            "ctaLabel": "Ver higienização e PMOC →",
             "serviceKey": "pmoc"
           }
         ]
@@ -307,18 +321,15 @@
       ],
       "heroStats": [
         {
-          "num": "90",
-          "suffix": " dias",
+          "value": "90 dias",
           "label": "Garantia formal OS"
         },
         {
-          "num": "4,6",
-          "suffix": " ★",
+          "value": "4,6 ★",
           "label": "142 avaliações Google"
         },
         {
-          "num": "R410A",
-          "suffix": " / R32",
+          "value": "R410A / R32",
           "label": "Recarga por balança"
         }
       ],
@@ -390,18 +401,15 @@
       ],
       "heroStats": [
         {
-          "num": "1",
-          "suffix": " ano",
+          "value": "1 ano",
           "label": "Garantia de instalação"
         },
         {
-          "num": "4,6",
-          "suffix": " ★",
+          "value": "4,6 ★",
           "label": "142 avaliações Google"
         },
         {
-          "num": "100%",
-          "suffix": " vácuo",
+          "value": "100% vácuo",
           "label": "Medição digital"
         }
       ],
@@ -473,18 +481,15 @@
       ],
       "heroStats": [
         {
-          "num": "Zero",
-          "suffix": " sujeira",
+          "value": "Zero sujeira",
           "label": "Isolamento total"
         },
         {
-          "num": "4,6",
-          "suffix": " ★",
+          "value": "4,6 ★",
           "label": "142 avaliações Google"
         },
         {
-          "num": "ANVISA",
-          "suffix": "",
+          "value": "ANVISA",
           "label": "Produto biodegradável"
         }
       ],
@@ -556,18 +561,15 @@
       ],
       "heroStats": [
         {
-          "num": "ANVISA",
-          "suffix": " / Lei",
+          "value": "ANVISA / Lei",
           "label": "100% em conformidade"
         },
         {
-          "num": "ART",
-          "suffix": " / TRT",
+          "value": "ART / TRT",
           "label": "Responsável habilitado"
         },
         {
-          "num": "90",
-          "suffix": " dias",
+          "value": "90 dias",
           "label": "Garantia formal OS"
         }
       ],
@@ -618,6 +620,163 @@
           }
         ]
       }
+    },
+    {
+      "slug": "conserto-geladeira",
+      "serviceKey": "geladeira",
+      "metaTitle": "Conserto de Geladeiras e Freezers em Indaiatuba, Salto e Itu | AR FRI",
+      "metaDescription": "Conserto de geladeiras Frost Free, Duplex, Inverter, Side by Side e Freezers que não gelam ou vazam água em Indaiatuba, Salto e Itu. Diagnóstico no local e 90 dias de garantia.",
+      "crawlerTitle": "Conserto de Geladeiras e Freezers em Indaiatuba, Salto e Itu - AR FRI",
+      "crawlerSummary": "Assistência técnica especializada em geladeiras Frost Free, Inverter, French Door, Side by Side e Freezers residenciais ou comerciais em Indaiatuba, Salto e Itu.",
+      "heroImageDesktop": "/images/hero-geladeira.webp",
+      "heroImageMobile": "/images/hero-geladeira-mobile.webp",
+      "heroImageAlt": "Técnico com multímetro digital realizando diagnóstico em geladeira Frost Free inox",
+      "heroH1Line1": "Conserto de Geladeiras e Freezers",
+      "heroH1Line2": "em Indaiatuba, Salto e Itu.",
+      "heroH1Accent": "Diagnóstico no local hoje.",
+      "heroSubtitle": "Não gela a parte de baixo, está vazando água, estalando ou motor desarmando? Atendimento em domicílio com peças originais e 90 dias de garantia por escrito.",
+      "heroBadges": [
+        "Atendimento em Domicílio",
+        "Frost Free, Inverter & Freezer"
+      ],
+      "heroStats": [
+        {
+          "value": "90 dias",
+          "label": "Garantia formal OS"
+        },
+        {
+          "value": "4,6 ★",
+          "label": "142 avaliações Google"
+        },
+        {
+          "value": "R600a / R134a",
+          "label": "Recarga por balança"
+        }
+      ],
+      "brands": [
+        "Brastemp",
+        "Consul",
+        "Electrolux",
+        "Samsung",
+        "LG",
+        "Panasonic",
+        "Metalfrio",
+        "Midea"
+      ],
+      "devicePills": [
+        {
+          "label": "Frost Free",
+          "value": "Frost Free",
+          "serviceKey": "geladeira"
+        },
+        {
+          "label": "Side by Side",
+          "value": "Side by Side",
+          "serviceKey": "geladeira"
+        },
+        {
+          "label": "Freezer",
+          "value": "Freezer",
+          "serviceKey": "geladeira"
+        },
+        {
+          "label": "Geladeira Inox",
+          "value": "Geladeira Inox",
+          "serviceKey": "geladeira"
+        }
+      ],
+      "defaultCheckedPill": "Frost Free",
+      "servicesSection": {
+        "kicker": "REFRIGERAÇÃO RESIDENCIAL & COMERCIAL",
+        "title": "Falhas em Geladeiras & Freezers que Resolvemos",
+        "introText": "Diagnosticamos a causa exata no seu endereço para restabelecer a temperatura ideal e evitar perda de alimentos.",
+        "cards": [
+          {
+            "kicker": "DEGELO & DRENAGEM",
+            "title": "Não Gela Embaixo & Vazamento",
+            "description": "Em geladeiras Frost Free, bloqueio do duto por gelo, sensor, resistência de degelo ou damper travado impedem o fluxo de ar frio; além de dreno entupido com água na gaveta.",
+            "chips": [
+              "Degelo Frost Free",
+              "Sensor e Resistência",
+              "Damper Travado",
+              "Dreno Entupido"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "geladeira"
+          },
+          {
+            "kicker": "MOTOR & GÁS REFRIGERANTE",
+            "title": "Motor Desarmando & Carga de Gás",
+            "description": "Geladeira estalando ou apitando por desgaste no relé de partida e protetor térmico, além de falta de gás R600a ou R134a com teste de estanqueidade e recarga por balança.",
+            "chips": [
+              "Relé e Protetor",
+              "Gás R600a / R134a",
+              "Teste Estanqueidade",
+              "Troca de Compressor"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "geladeira"
+          },
+          {
+            "kicker": "ELETRÔNICA & FREEZERS",
+            "title": "Placa Inverter & Freezers",
+            "description": "Painel digital apagado ou piscando erro após oscilações de energia em modelos Duplex/Inverter/Side by Side, além de conserto de freezer vertical e horizontal comercial.",
+            "chips": [
+              "Placa Inverter",
+              "Painel Digital",
+              "Freezer Comercial",
+              "Termostato / Borracha"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "geladeira"
+          }
+        ]
+      },
+      "guarantee": {
+        "introText": "A grande maioria dos consertos em geladeiras e freezers é concluída diretamente na sua residência ou comércio, sem risco de avarias no transporte.",
+        "imageSrc": "/images/tecnico-garantia-geladeira.webp",
+        "imageAlt": "Técnico entregando ordem de serviço e garantia formal ao lado de refrigerador inox",
+        "rows": [
+          {
+            "value": "90 dias",
+            "text": "Garantia formal por escrito na ordem de serviço para peças substituídas e mão de obra"
+          },
+          {
+            "value": "Peças originais",
+            "text": "Sensores, placas inverter, relés, termostatos e compressores de primeira linha"
+          },
+          {
+            "value": "R600a & R134a",
+            "text": "Teste de estanqueidade com nitrogênio e recarga dosada em balança digital"
+          },
+          {
+            "value": "No seu endereço",
+            "text": "Unidade móvel equipada com peças e ferramental completo para reparar no local"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "O conserto da geladeira ou freezer é feito na minha casa?",
+          "answer": "Sim. A grande maioria dos serviços em refrigeradores e freezers é concluída diretamente na sua residência ou comércio. Nossos técnicos levam peças de reposição e ferramental completo na unidade móvel, evitando risco de avarias no transporte."
+        },
+        {
+          "question": "Vocês atendem geladeiras Inverter, French Door e Side by Side?",
+          "answer": "Sim. Nossa equipe conta com manômetros digitais e instrumentação específica para sistemas Inverter multimarcas, além de modelos Duplex, Side by Side e French Door."
+        },
+        {
+          "question": "Qual a garantia do conserto da geladeira?",
+          "answer": "Oferecemos 90 dias de garantia formal por escrito na ordem de serviço, cobrindo todas as peças novas substituídas e a mão de obra técnica executada."
+        },
+        {
+          "question": "O que fazer se a geladeira parou de gelar para não perder alimentos?",
+          "answer": "Evite abrir as portas desnecessariamente para reter o ar frio residual e entre em contato pelo WhatsApp para verificarmos o técnico em rota mais próximo da sua região."
+        },
+        {
+          "question": "Vocês atendem quais cidades e marcas na região?",
+          "answer": "Atendemos Brastemp, Consul, Electrolux, Samsung, LG, Panasonic, Metalfrio e Midea em todos os bairros e condomínios de Indaiatuba, Salto e Itu (SP)."
+        }
+      ]
     }
   ]
 }
