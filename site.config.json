@@ -46,11 +46,11 @@
   "rewrites": [
     {
       "source": "/conserto-geladeira-freezer",
-      "destination": "/conserto-geladeira.html"
+      "destination": "/conserto-geladeira"
     },
     {
       "source": "/geladeira",
-      "destination": "/conserto-geladeira.html"
+      "destination": "/conserto-geladeira"
     }
   ],
   "devicePills": [
