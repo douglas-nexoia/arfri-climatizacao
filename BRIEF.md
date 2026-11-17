@@ -24,7 +24,7 @@
 | Campo | Valor | ➔ config | Regra |
 |---|---|---|---|
 | Cidade principal | Indaiatuba | `company.city` | |
-| Região exibida no H1 | em Indaiatuba, Salto e Itu. | `company.region` | 27 caracteres cravados para o H1 |
+| Região de atendimento | Indaiatuba, Salto e Itu | `company.region` | Sem "em " nem ponto final (usado no rodapé/mapa/404) |
 | Região expandida | Indaiatuba, Salto, Itu e Região Metropolitana | (Subtítulo / Cobertura) | |
 | UF | SP | `company.state` | 2 letras |
 | Rótulo do mapa (HUD) | INDAIATUBA & REGIÃO | `coverage.hudRegionLabel` | MAIÚSCULAS curtas |
