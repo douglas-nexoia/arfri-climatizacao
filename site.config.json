@@ -1,0 +1,623 @@
+{
+  "company": {
+    "slug": "arfri-climatizacao",
+    "brandUpper": "AR FRI",
+    "brandTag": "CLIMATIZAÇÃO",
+    "fullName": "AR FRI Climatização e Ar Condicionado",
+    "cnpj": "PENDENTE",
+    "technicianName": "Renato Tortorelli",
+    "city": "Indaiatuba",
+    "region": "em Indaiatuba, Salto e Itu.",
+    "state": "SP",
+    "phoneDisplay": "(19) 99787-1301",
+    "phoneTel": "+5519997871301",
+    "whatsappNumber": "5519997871301",
+    "email": "Renatotortorelli95@gmail.com",
+    "hoursShort": "Seg a Sex das 8h às 18h · Sáb das 8h às 13h",
+    "contactScheduleText": "Segunda a sexta das 8h às 18h · Sábados das 8h às 13h. Rotas diárias de atendimento em Indaiatuba, Salto e Itu.",
+    "footerDescription": "Assistência técnica especializada em conserto, instalação, higienização e contratos PMOC de ar-condicionado em Indaiatuba, Salto e Itu.",
+    "googleRating": "4,6",
+    "googleReviewsCount": "142"
+  },
+  "theme": {
+    "base": "#0A141E",
+    "base2": "#101E2E",
+    "base3": "#182C42",
+    "acc": "#1762CC",
+    "accLight": "#4B95F5",
+    "accHover": "#1D74E8"
+  },
+  "tracking": {
+    "domain": "https://www.arfriclimatizacao.com.br",
+    "googleAdsId": "AW-18416024511",
+    "whatsappConversionLabel": "AW-18416024511/gD9VCPnrk-ocEL_3uM1E",
+    "phoneConversionLabel": "AW-18416024511/x8QFCN7rk-ocEL_3uM1E",
+    "octPrefix": "AF",
+    "supabaseEndpoint": "https://hrobytuiaxoflsezgpce.supabase.co/functions/v1/registrar-clique-ads",
+    "messages": {
+      "home": "Olá! Vim pelo site, gostaria de um atendimento para ar-condicionado em Indaiatuba, Salto ou Itu.",
+      "conserto": "Olá! Vim pelo site, gostaria de um atendimento para conserto de ar-condicionado.",
+      "instalacao": "Olá! Vim pelo site, gostaria de um atendimento para instalação de ar-condicionado.",
+      "higienizacao": "Olá! Vim pelo site, gostaria de um atendimento para limpeza e higienização de ar-condicionado.",
+      "pmoc": "Olá! Vim pelo site, gostaria de um atendimento para contrato de PMOC ou laudo técnico de ar-condicionado."
+    }
+  },
+  "devicePills": [
+    {
+      "label": "Conserto",
+      "value": "Conserto",
+      "serviceKey": "conserto"
+    },
+    {
+      "label": "Instalação",
+      "value": "Instalação",
+      "serviceKey": "instalacao"
+    },
+    {
+      "label": "Higienização",
+      "value": "Higienização",
+      "serviceKey": "higienizacao"
+    },
+    {
+      "label": "PMOC",
+      "value": "PMOC",
+      "serviceKey": "pmoc"
+    }
+  ],
+  "footerServices": [
+    {
+      "label": "Conserto de Ar-Condicionado",
+      "href": "/conserto-ar-condicionado"
+    },
+    {
+      "label": "Instalação de Ar-Condicionado",
+      "href": "/instalacao-ar-condicionado"
+    },
+    {
+      "label": "Higienização Química",
+      "href": "/limpeza-higienizacao-ar-condicionado"
+    },
+    {
+      "label": "Contratos de PMOC (Empresas)",
+      "href": "/pmoc-ar-condicionado"
+    }
+  ],
+  "brands": [
+    "Daikin",
+    "Fujitsu",
+    "LG",
+    "Samsung",
+    "Midea",
+    "Gree",
+    "Carrier",
+    "Elgin"
+  ],
+  "steps": [
+    {
+      "num": "01",
+      "title": "Você solicita o atendimento",
+      "description": "Informe a marca, o tipo de aparelho e o sintoma ou projeto pelo WhatsApp em segundos."
+    },
+    {
+      "num": "02",
+      "title": "Agendamento na sua rota",
+      "description": "Confirmamos o horário com nossos técnicos em rota diária por Indaiatuba, Salto e Itu."
+    },
+    {
+      "num": "03",
+      "title": "Diagnóstico e orçamento claro",
+      "description": "Avaliamos pressão, elétrica e sensores com instrumentação digital e passamos o orçamento fechado antes de executar."
+    },
+    {
+      "num": "04",
+      "title": "Serviço com garantia formal",
+      "description": "Execução técnica limpa com peças originais, ordem de serviço formal e 90 dias de garantia."
+    }
+  ],
+  "guarantee": {
+    "introText": "Trabalhamos com diagnóstico transparente e respeito ao seu imóvel residencial ou corporativo: nada é executado sem a sua aprovação prévia.",
+    "imageSrc": "/images/tecnico-garantia.webp",
+    "imageAlt": "Técnico Renato Tortorelli entregando ordem de serviço e garantia formal de ar-condicionado",
+    "rows": [
+      {
+        "value": "90 dias",
+        "text": "Garantia formal por escrito em peças substituídas e mão de obra (e 1 ano em novas instalações)"
+      },
+      {
+        "value": "100% cobre",
+        "text": "Tubulação de cobre de parede grossa e componentes originais de fábrica"
+      },
+      {
+        "value": "Norma ANVISA / PMOC",
+        "text": "Protocolos da Lei Federal 13.589/2018 com ART/TRT e laudo técnico para empresas"
+      },
+      {
+        "value": "OS Formal",
+        "text": "Técnico identificado com ordem de serviço detalhada e garantia documentada"
+      }
+    ]
+  },
+  "coverage": {
+    "expandedRegion": "Indaiatuba, Salto, Itu e Região Metropolitana",
+    "introText": "Unidades móveis equipadas com rotas diárias para residências, condomínios fechados, clínicas e empresas na região.",
+    "hudRegionLabel": "INDAIATUBA & REGIÃO",
+    "hudAudienceLabel": "RESIDÊNCIAS, COMÉRCIOS & EMPRESAS",
+    "extraChipLabel": "+ 20 bairros e condomínios",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117498.41162397759!2d-47.30138980839845!3d-23.109015099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b417e296317b%3A0xa1dfb5c92c813be8!2sIndaiatuba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr",
+    "neighborhoods": [
+      "Centro",
+      "Cidade Nova",
+      "Itaici",
+      "Jardim Morada do Sol",
+      "Jardim Esplanada",
+      "Parque Ecológico",
+      "Jardim Pau Preto",
+      "Salto (Centro)",
+      "Itu (Centro)",
+      "Condomínios Fechados da Região"
+    ]
+  },
+  "reviews": [
+    {
+      "author": "Nilce Tortorelli",
+      "timeAgo": "há 9 meses",
+      "neighborhood": "Indaiatuba",
+      "text": "Excelente desempenho! Gostei muito do trabalho realizado e recomendo a todos que precisarem de uma indicação de um profissional competente!"
+    },
+    {
+      "author": "Marcos Rezende Marquinho",
+      "timeAgo": "há 3 meses",
+      "neighborhood": "Indaiatuba",
+      "text": "Serviços ficou muito bom gostei muito"
+    },
+    {
+      "author": "Kevyn Melo",
+      "timeAgo": "há 8 meses",
+      "neighborhood": "Indaiatuba e Região",
+      "text": "Serviço ficou ótimo gostei muito"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Meu ar-condicionado não gela ou está pingando água, o que pode ser?",
+      "answer": "Geralmente ocorre por obstrução na bandeja e dreno, falta de gás por microvazamento nas conexões ou falha de capacitor e placa inverter. Avaliamos a pressão e a parte elétrica no próprio local."
+    },
+    {
+      "question": "A higienização faz sujeira na parede ou nos móveis?",
+      "answer": "Não. Utilizamos uma bolsa coletora impermeável profissional que envelopa a evaporadora na parede, direcionando toda a água e os resíduos químicos diretamente para o reservatório."
+    },
+    {
+      "question": "Por que vocês exigem tubulação 100% em cobre e vácuo na instalação?",
+      "answer": "O cobre suporta a alta pressão dos fluidos R410A e R32 sem oxidar, e o vácuo medido com vacuômetro digital remove toda a umidade do sistema, protegendo o compressor e mantendo a garantia do fabricante."
+    },
+    {
+      "question": "Quais empresas precisam obrigatoriamente de contrato PMOC?",
+      "answer": "Pela Lei Federal 13.589/2018 e portarias da ANVISA, edifícios públicos e privados de uso coletivo (clínicas, escolas, escritórios, lojas, academias e indústrias) com climatização devem manter PMOC ativo assinado por responsável técnico com ART/TRT."
+    },
+    {
+      "question": "Vocês atendem marcas como Springer, Midea, LG, Samsung e Daikin?",
+      "answer": "Sim. Somos especializados em sistemas Inverter e convencionais das principais marcas do mercado, incluindo Daikin, Fujitsu, LG, Samsung, Midea, Springer, Gree, Carrier e Elgin."
+    },
+    {
+      "question": "Qual o prazo de garantia e quais cidades vocês atendem?",
+      "answer": "Oferecemos 90 dias de garantia formal em peças e mão de obra nos reparos e 1 ano em novas instalações, com rotas diárias em Indaiatuba, Salto, Itu e condomínios fechados da região."
+    }
+  ],
+  "pages": [
+    {
+      "slug": "index",
+      "serviceKey": "home",
+      "metaTitle": "Ar-Condicionado e PMOC em Indaiatuba, Salto e Itu | AR FRI",
+      "metaDescription": "Conserto, instalação padrão de fábrica, higienização química e contratos PMOC de ar-condicionado em Indaiatuba, Salto e Itu. Atendimento técnico rápido com garantia formal.",
+      "crawlerTitle": "AR FRI Climatização - Conserto, Instalação, Higienização e PMOC em Indaiatuba, Salto e Itu",
+      "crawlerSummary": "Assistência técnica especializada em ar-condicionado Split e Inverter, higienização com bolsa coletora e implantação de PMOC conforme Lei 13.589/2018 em Indaiatuba, Salto e Itu.",
+      "heroImageDesktop": "/images/hero-indaiatuba.webp",
+      "heroImageMobile": "/images/hero-indaiatuba-mobile.webp",
+      "heroImageAlt": "Ar-condicionado split inverter climatizando sala residencial moderna em Indaiatuba",
+      "heroH1Line1": "Conserto e Instalação de Ar",
+      "heroH1Line2": "em Indaiatuba, Salto e Itu.",
+      "heroH1Accent": "Atendimento técnico hoje.",
+      "heroSubtitle": "Manutenção corretiva, instalação padrão de fábrica, higienização com bolsa coletora e implantação de PMOC empresarial com garantia formal por escrito.",
+      "heroBadges": [
+        "Rotas Diárias na Região",
+        "Residências, Condomínios e Empresas"
+      ],
+      "heroStats": [
+        {
+          "num": "90",
+          "suffix": " dias",
+          "label": "Garantia formal OS"
+        },
+        {
+          "num": "4,6",
+          "suffix": " ★",
+          "label": "142 avaliações Google"
+        },
+        {
+          "num": "100%",
+          "suffix": " cobre",
+          "label": "Vácuo digital e padrão"
+        }
+      ],
+      "defaultCheckedPill": "Conserto",
+      "servicesSection": {
+        "kicker": "CLIMATIZAÇÃO RESIDENCIAL & CORPORATIVA",
+        "title": "Nossos Serviços em Ar-Condicionado",
+        "introText": "Atuação especializada em climatização com instrumentação digital, limpeza sem sujeira e conformidade técnica para residências e empresas.",
+        "cards": [
+          {
+            "kicker": "REPARO CORRETIVO",
+            "title": "Conserto & Manutenção Rápida",
+            "description": "Diagnóstico preciso para ar-condicionado que não gela, pinga água na parede, apresenta códigos de erro no painel ou precisa de recarga de gás.",
+            "chips": [
+              "Ar Não Gela",
+              "Vazamento de Água",
+              "Placa Inverter",
+              "Carga de Gás"
+            ],
+            "ctaHref": "/conserto-ar-condicionado",
+            "serviceKey": "conserto"
+          },
+          {
+            "kicker": "PADRÃO DE FÁBRICA",
+            "title": "Instalação Padrão de Fábrica",
+            "description": "Fixação segura de Split Hi-Wall e Inverter com tubulação 100% em cobre, teste de estanqueidade com nitrogênio e vácuo com vacuômetro digital.",
+            "chips": [
+              "Tubulação 100% Cobre",
+              "Teste de Estanqueidade",
+              "Vácuo Digital",
+              "Garantia Preservada"
+            ],
+            "ctaHref": "/instalacao-ar-condicionado",
+            "serviceKey": "instalacao"
+          },
+          {
+            "kicker": "SAÚDE & LEI 13.589/2018",
+            "title": "Higienização & Contratos PMOC",
+            "description": "Limpeza química bactericida com bolsa coletora antiácaros para sua casa e implantação completa de PMOC com laudo técnico e ART/TRT para empresas.",
+            "chips": [
+              "Bolsa Coletora Limpa",
+              "Bactericida ANVISA",
+              "Contrato PMOC Mensal",
+              "Emissão de ART / TRT"
+            ],
+            "ctaHref": "/pmoc-ar-condicionado",
+            "serviceKey": "pmoc"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "conserto-ar-condicionado",
+      "serviceKey": "conserto",
+      "metaTitle": "Conserto de Ar-Condicionado em Indaiatuba, Salto e Itu | AR FRI",
+      "metaDescription": "Ar-condicionado não gela, pinga água ou dá erro? Conserto técnico em Indaiatuba, Salto e Itu para placas inverter, compressor, sensores e vazamento de gás.",
+      "crawlerTitle": "Conserto de Ar-Condicionado Split e Inverter em Indaiatuba, Salto e Itu - AR FRI",
+      "crawlerSummary": "Manutenção corretiva especializada para ar-condicionado Split e Inverter em Indaiatuba, Salto e Itu com diagnóstico no local e 90 dias de garantia.",
+      "heroImageDesktop": "/images/hero-conserto.webp",
+      "heroImageMobile": "/images/hero-conserto-mobile.webp",
+      "heroImageAlt": "Técnico diagnosticando placa inverter e pressão de ar-condicionado split com manifold digital",
+      "heroH1Line1": "Conserto de Ar-Condicionado",
+      "heroH1Line2": "em Indaiatuba, Salto e Itu.",
+      "heroH1Accent": "Diagnóstico no local hoje.",
+      "heroSubtitle": "Reparo especializado em placas inverter, sensores, compressores, correção de vazamentos e eliminação de gotejamento na unidade interna.",
+      "heroBadges": [
+        "Diagnóstico com Manifold Digital",
+        "90 Dias de Garantia na OS"
+      ],
+      "heroStats": [
+        {
+          "num": "90",
+          "suffix": " dias",
+          "label": "Garantia formal OS"
+        },
+        {
+          "num": "4,6",
+          "suffix": " ★",
+          "label": "142 avaliações Google"
+        },
+        {
+          "num": "R410A",
+          "suffix": " / R32",
+          "label": "Recarga por balança"
+        }
+      ],
+      "defaultCheckedPill": "Conserto",
+      "servicesSection": {
+        "kicker": "MANUTENÇÃO CORRETIVA",
+        "title": "Falhas que Resolvemos no Local",
+        "introText": "Ferramental de precisão para identificar a causa raiz do defeito na primeira visita, sem troca desnecessária de peças.",
+        "cards": [
+          {
+            "kicker": "ELETRÔNICA & INVERTER",
+            "title": "Placas Inverter & Códigos de Erro",
+            "description": "Diagnóstico e reparo de placas condensadoras e evaporadoras, módulos IPM, sensores de degelo/ambiente e códigos de falha no display.",
+            "chips": [
+              "Placa Inverter",
+              "Erro de Comunicação",
+              "Sensores NTC",
+              "Placa da Condensadora"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "conserto"
+          },
+          {
+            "kicker": "CIRCUITO FRIGORÍFICO",
+            "title": "Não Gela & Recarga de Gás",
+            "description": "Localização de microvazamentos em flanges e serpentinas, pressurização com nitrogênio, vácuo e recarga de gás na balança digital.",
+            "chips": [
+              "Correção de Vazamento",
+              "Recarga R410A / R32",
+              "Troca de Capacitor",
+              "Partida de Compressor"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "conserto"
+          },
+          {
+            "kicker": "DRENAGEM & MECÂNICA",
+            "title": "Pinga Água & Ruído Excessivo",
+            "description": "Desobstrução pressurizada de drenos, correção de caimento, substituição de motores ventiladores e balanceamento de turbinas barulhentas.",
+            "chips": [
+              "Ar Pingando Água",
+              "Desentupimento Dreno",
+              "Turbina e Rolamento",
+              "Motor Ventilador"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "conserto"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "instalacao-ar-condicionado",
+      "serviceKey": "instalacao",
+      "metaTitle": "Instalação de Ar-Condicionado em Indaiatuba, Salto e Itu | AR FRI",
+      "metaDescription": "Instalação de ar-condicionado split e inverter em Indaiatuba, Salto e Itu. Tubulação 100% cobre, teste de estanqueidade, vácuo digital e garantia preservada.",
+      "crawlerTitle": "Instalação de Ar-Condicionado Padrão de Fábrica em Indaiatuba - AR FRI",
+      "crawlerSummary": "Instalação técnica de ar-condicionado split, multi split e comercial com cobre puro, vácuo digital e 1 ano de garantia na instalação.",
+      "heroImageDesktop": "/images/hero-instalacao.webp",
+      "heroImageMobile": "/images/hero-instalacao-mobile.webp",
+      "heroImageAlt": "Técnico instalando ar-condicionado split com tubulação de cobre e vacuômetro digital",
+      "heroH1Line1": "Instalação de Ar-Condicionado",
+      "heroH1Line2": "em Indaiatuba, Salto e Itu.",
+      "heroH1Accent": "Padrão oficial de fábrica.",
+      "heroSubtitle": "Tubulação 100% em cobre, isolamento blindado, teste de estanqueidade e vácuo com vacuômetro digital para preservar a garantia original do seu aparelho.",
+      "heroBadges": [
+        "1 Ano de Garantia na Instalação",
+        "Infraestrutura 100% em Cobre"
+      ],
+      "heroStats": [
+        {
+          "num": "1",
+          "suffix": " ano",
+          "label": "Garantia de instalação"
+        },
+        {
+          "num": "4,6",
+          "suffix": " ★",
+          "label": "142 avaliações Google"
+        },
+        {
+          "num": "100%",
+          "suffix": " vácuo",
+          "label": "Medição digital"
+        }
+      ],
+      "defaultCheckedPill": "Instalação",
+      "servicesSection": {
+        "kicker": "ENGENHARIA DE INSTALAÇÃO",
+        "title": "Etapas da Instalação Certificada",
+        "introText": "Seguimos rigorosamente o manual técnico de fabricantes como Daikin, Fujitsu, LG, Samsung e Midea Carrier.",
+        "cards": [
+          {
+            "kicker": "MATERIAIS NORMATIZADOS",
+            "title": "Tubulação 100% Cobre & Suportes",
+            "description": "Linhas frigoríficas exclusivamente em cobre flexível com isolamento elastomérico individual, cabo PP certificado e suportes reforçados.",
+            "chips": [
+              "Cobre Parede Grossa",
+              "Isolamento Blindado",
+              "Suporte Anticorrosão",
+              "Acabamento Limpo"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "instalacao"
+          },
+          {
+            "kicker": "INTEGRIDADE DO COMPRESSOR",
+            "title": "Estanqueidade & Vácuo Digital",
+            "description": "Flanges escareadas com precisão, pressurização com nitrogênio contra vazamentos e desidratação completa com bomba de vácuo e vacuômetro.",
+            "chips": [
+              "Teste Nitrogênio",
+              "Bomba de Vácuo",
+              "Vacuômetro Digital",
+              "Garantia de Fábrica"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "instalacao"
+          },
+          {
+            "kicker": "PROJETOS & CONDOMÍNIOS",
+            "title": "Split, Multi Split & Desinstalação",
+            "description": "Instalação em casas, apartamentos com área técnica, condomínios fechados de Indaiatuba/Salto/Itu, além de remoção com recolhimento de gás.",
+            "chips": [
+              "Split Hi-Wall",
+              "Cassete e Piso-Teto",
+              "Recolhimento de Gás",
+              "Condomínios e Lojas"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "instalacao"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "limpeza-higienizacao-ar-condicionado",
+      "serviceKey": "higienizacao",
+      "metaTitle": "Higienização de Ar-Condicionado em Indaiatuba, Salto e Itu | AR FRI",
+      "metaDescription": "Limpeza e higienização profunda de ar-condicionado em Indaiatuba, Salto e Itu com bolsa coletora sem sujeira e bactericida ANVISA. Elimine mofo, ácaros e mau cheiro.",
+      "crawlerTitle": "Limpeza e Higienização Química de Ar-Condicionado em Indaiatuba - AR FRI",
+      "crawlerSummary": "Higienização técnica de ar-condicionado com bolsa coletora impermeável e sanitizante registrado na ANVISA, sem sujar o ambiente.",
+      "heroImageDesktop": "/images/hero-higienizacao.webp",
+      "heroImageMobile": "/images/hero-higienizacao-mobile.webp",
+      "heroImageAlt": "Técnico realizando higienização profunda de serpentina de ar-condicionado com bolsa coletora",
+      "heroH1Line1": "Higienização de Ar-Condicionado",
+      "heroH1Line2": "em Indaiatuba, Salto e Itu.",
+      "heroH1Accent": "Sem sujeira na parede.",
+      "heroSubtitle": "Lavagem química técnica com bolsa coletora impermeável e sanitizante registrado na ANVISA para eliminar ácaros, fungos, odores e melhorar o rendimento.",
+      "heroBadges": [
+        "Bolsa Coletora Impermeável",
+        "Bactericida Padrão ANVISA"
+      ],
+      "heroStats": [
+        {
+          "num": "Zero",
+          "suffix": " sujeira",
+          "label": "Isolamento total"
+        },
+        {
+          "num": "4,6",
+          "suffix": " ★",
+          "label": "142 avaliações Google"
+        },
+        {
+          "num": "ANVISA",
+          "suffix": "",
+          "label": "Produto biodegradável"
+        }
+      ],
+      "defaultCheckedPill": "Higienização",
+      "servicesSection": {
+        "kicker": "SAÚDE RESPIRATÓRIA & ECONOMIA",
+        "title": "O que Inclui a Higienização Completa",
+        "introText": "Desmontagem controlada dos componentes internos para lavagem profunda da turbina, serpentina e sistema de drenagem.",
+        "cards": [
+          {
+            "kicker": "PROTEÇÃO AMBIENTAL",
+            "title": "Limpeza com Bolsa Coletora",
+            "description": "Isolamento completo da evaporadora na parede para lavagem pressurizada sem respingos em camas, sofás, pisos ou pintura.",
+            "chips": [
+              "Sem Respingos",
+              "Proteção Eletrônica",
+              "Desmontagem Carenagem",
+              "Lavagem de Turbina"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "higienizacao"
+          },
+          {
+            "kicker": "CONTROLE MICROBIOLÓGICO",
+            "title": "Bactericida & Antifúngico ANVISA",
+            "description": "Aplicação de sanitizante hospitalar autorizado pela ANVISA para eliminar fungos, bactérias, mofo e odores desagradáveis no ar.",
+            "chips": [
+              "Ação Bactericida",
+              "Elimina Mau Cheiro",
+              "Reduz Alergias",
+              "Seguro p/ Quartos"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "higienizacao"
+          },
+          {
+            "kicker": "PREVENTIVA & RENDIMENTO",
+            "title": "Dreno, Serpentina & Condensadora",
+            "description": "Desobstrução da bandeja e mangueira de dreno contra gotejamentos, além de limpeza da condensadora externa para reduzir consumo elétrico.",
+            "chips": [
+              "Desentupimento Dreno",
+              "Limpeza de Serpentina",
+              "Check-up Preventivo",
+              "Menor Consumo"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "higienizacao"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "pmoc-ar-condicionado",
+      "serviceKey": "pmoc",
+      "metaTitle": "Contrato PMOC Ar-Condicionado em Indaiatuba, Salto e Itu | AR FRI",
+      "metaDescription": "Implantação e manutenção mensal de PMOC (Lei 13.589/2018) em Indaiatuba, Salto e Itu para empresas, clínicas, escolas e escritórios com ART/TRT e laudo técnico.",
+      "crawlerTitle": "Contrato e Implantação de PMOC para Empresas em Indaiatuba, Salto e Itu - AR FRI",
+      "crawlerSummary": "Elaboração e execução de Plano de Manutenção, Operação e Controle (PMOC) conforme Lei Federal 13.589/2018 e ANVISA com ART/TRT em Indaiatuba, Salto e Itu.",
+      "heroImageDesktop": "/images/hero-pmoc.webp",
+      "heroImageMobile": "/images/hero-pmoc-mobile.webp",
+      "heroImageAlt": "Engenheiro e técnico realizando inspeção PMOC e laudo de climatização em ambiente corporativo",
+      "heroH1Line1": "Contratos PMOC de Climatização",
+      "heroH1Line2": "em Indaiatuba, Salto e Itu.",
+      "heroH1Accent": "Conformidade ANVISA & ART.",
+      "heroSubtitle": "Implantação completa de PMOC (Lei Federal 13.589/2018) para clínicas, empresas, escolas e comércios com vistorias programadas, laudo técnico e ART/TRT.",
+      "heroBadges": [
+        "Lei Federal 13.589/2018",
+        "Laudo Técnico com ART / TRT"
+      ],
+      "heroStats": [
+        {
+          "num": "ANVISA",
+          "suffix": " / Lei",
+          "label": "100% em conformidade"
+        },
+        {
+          "num": "ART",
+          "suffix": " / TRT",
+          "label": "Responsável habilitado"
+        },
+        {
+          "num": "90",
+          "suffix": " dias",
+          "label": "Garantia formal OS"
+        }
+      ],
+      "defaultCheckedPill": "PMOC",
+      "servicesSection": {
+        "kicker": "ENGENHARIA & CONFORMIDADE LEGAL",
+        "title": "Gestão Completa de PMOC Empresarial",
+        "introText": "Proteja sua empresa contra multas da Vigilância Sanitária e reduza paradas de equipamentos com manutenção preventiva documentada.",
+        "cards": [
+          {
+            "kicker": "DOCUMENTAÇÃO OFICIAL",
+            "title": "Elaboração PMOC & ART / TRT",
+            "description": "Levantamento de carga térmica, inventário completo das máquinas, cronograma técnico assinado por responsável habilitado e emissão de ART/TRT.",
+            "chips": [
+              "Lei 13.589/2018",
+              "Emissão ART / TRT",
+              "Pasta para Fiscalização",
+              "Laudo de Qualidade do Ar"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "pmoc"
+          },
+          {
+            "kicker": "ROTINA PROGRAMADA",
+            "title": "Manutenção Preventiva Mensal",
+            "description": "Visitas periódicas agendadas para higienização de filtros e bandejas, medição elétrica de corrente, testes de pressão e relatórios por equipamento.",
+            "chips": [
+              "Checklist por Máquina",
+              "Medição Elétrica",
+              "Controle Microbiológico",
+              "Atendimento Prioritário"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "pmoc"
+          },
+          {
+            "kicker": "AMBIENTES CORPORATIVOS",
+            "title": "Clínicas, Escolas, Lojas & Indústrias",
+            "description": "Planos sob medida para consultórios médicos e odontológicos, escritórios, comércios, academias e condomínios em Indaiatuba, Salto e Itu.",
+            "chips": [
+              "Clínicas e Hospitais",
+              "Escritórios e Lojas",
+              "Escolas e Academias",
+              "Emissão de Nota Fiscal"
+            ],
+            "ctaHref": "#contato",
+            "serviceKey": "pmoc"
+          }
+        ]
+      }
+    }
+  ]
+}
